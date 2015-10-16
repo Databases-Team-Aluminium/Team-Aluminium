@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TeamAluminium.Models")]
+[assembly: AssemblyTitle("ArtGallery.MongoDbConsoleImporter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TeamAluminium.Models")]
+[assembly: AssemblyProduct("ArtGallery.MongoDbConsoleImporter")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a8b6fb1e-60a5-4045-b9e0-a58ca325fdfc")]
+[assembly: Guid("7de25a3a-f235-4d06-822d-d5fa7e2525de")]
 
 // Version information for an assembly consists of the following four values:
 //
