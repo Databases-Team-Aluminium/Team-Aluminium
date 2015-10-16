@@ -59,9 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataImporter.cs" />
+    <Compile Include="MongoDbDataImporter.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\RandomGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -72,6 +73,12 @@
       <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
       <Name>ArtGallery.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\ArtWorkNames.txt" />
+    <Content Include="Data\CountryNames.txt" />
+    <Content Include="Data\PeopleNames\FirstNames.txt" />
+    <Content Include="Data\PeopleNames\LastNames.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

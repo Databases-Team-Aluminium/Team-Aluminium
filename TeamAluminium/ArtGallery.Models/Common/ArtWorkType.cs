@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models
+﻿namespace ArtGallery.Models.Common
 {
     public enum ArtWorkType
     {

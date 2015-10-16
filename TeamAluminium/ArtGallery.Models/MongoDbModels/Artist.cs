@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models
+﻿namespace ArtGallery.Models.MongoDbModels
 {
     using System.Collections.Generic;
 
@@ -6,12 +6,12 @@
     {
         private ICollection<ArtWork> artWorks;
 
-        public Artist() : base()
+        public Artist()
         {
             this.artWorks = new HashSet<ArtWork>();
         }
 
-        public virtual ICollection<ArtWork> ArtWorks
+        public ICollection<ArtWork> ArtWorks
         {
             get
             {

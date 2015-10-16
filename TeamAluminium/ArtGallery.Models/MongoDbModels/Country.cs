@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models
+﻿namespace ArtGallery.Models.MongoDbModels
 {
     using System.Collections.Generic;
 

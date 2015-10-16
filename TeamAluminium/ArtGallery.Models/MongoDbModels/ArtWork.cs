@@ -1,6 +1,8 @@
-﻿namespace ArtGallery.Models
+﻿namespace ArtGallery.Models.MongoDbModels
 {
-    public abstract class ArtWork
+    using Common;
+
+    public class ArtWork
     {
         public int Id { get; set; }
         
@@ -9,9 +11,7 @@
         public ArtWorkType Type { get; set; }
         
         public ArtWorkStatus Status { get; set; }
-        
-        public int ArtistId { get; set; }
 
-        public virtual Artist Artist { get; set; }
+        public Artist Artist { get; set; }
     }
 }

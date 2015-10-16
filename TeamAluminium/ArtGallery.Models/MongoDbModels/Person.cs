@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models
+﻿namespace ArtGallery.Models.MongoDbModels
 {
     using System;
 
@@ -12,8 +12,8 @@
         
         public string LastName { get; set; }
         
-        public string Nationality { get; set; }
-
-        public DateTime? DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        
+        public Country Country { get; set; }
     }
 }

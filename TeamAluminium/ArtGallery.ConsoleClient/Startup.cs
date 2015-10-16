@@ -1,17 +1,13 @@
-﻿namespace ArtGallery.ConsoleClient
-{
-    using System;
+﻿using ArtGallery.ConsoleClient.Utils;
 
+namespace ArtGallery.ConsoleClient
+{
     public class Startup
     {
         public static void Main()
         {
-            Console.WriteLine(value: "Importing data into artgallerydb...");
-
-            var consoleImporter = new DataImporter();
-            consoleImporter.ImportSampleData();
-
-            Console.WriteLine(value: "Done.");
+            new MongoDbDataImporter().ImportSampleData();
+            
         }
     }
 }
