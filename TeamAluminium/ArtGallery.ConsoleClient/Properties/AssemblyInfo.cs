@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ArtGallery.MongoDbConsoleImporter")]
+[assembly: AssemblyTitle("ArtGallery.ConsoleClient")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ArtGallery.MongoDbConsoleImporter")]
+[assembly: AssemblyProduct("ArtGallery.ConsoleClient")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7de25a3a-f235-4d06-822d-d5fa7e2525de")]
+[assembly: Guid("a4644c44-10ec-46d7-8374-a8f496309671")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,25 +1,13 @@
-﻿namespace ArtGallery.MongoDbConsoleImporter
+﻿namespace ArtGallery.ConsoleClient
 {
-    using System;
     using System.Collections.Generic;
 
     using Models;
     using MongoDB.Driver;
 
-    public class Startup
+    public class DataImporter
     {
-        /// TODO: FIX MODELS CONSTRUCTORS
-
-        public static void Main()
-        {
-            Console.WriteLine(value: "Importing data into artgallerydb...");
-
-            ImportSampleData();
-
-            Console.WriteLine(value: "Done.");
-        }
-
-        private static void ImportSampleData()
+        public void ImportSampleData()
         {
             string connectionString = "mongodb://localhost:27017";
             var client = new MongoClient(connectionString);

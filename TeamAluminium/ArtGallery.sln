@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGallery", "ArtGallery", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.Models", "ArtGallery.Models\ArtGallery.Models.csproj", "{5A7ED859-C6A9-4E9E-BABD-14763BB53F24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.MongoDbConsoleImporter", "ArtGallery.MongoDbConsoleImporter\ArtGallery.MongoDbConsoleImporter.csproj", "{7DE25A3A-F235-4D06-822D-D5FA7E2525DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.ConsoleClient", "ArtGallery.ConsoleClient\ArtGallery.ConsoleClient.csproj", "{A4644C44-10EC-46D7-8374-A8F496309671}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +19,16 @@ Global
 		{5A7ED859-C6A9-4E9E-BABD-14763BB53F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7ED859-C6A9-4E9E-BABD-14763BB53F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7ED859-C6A9-4E9E-BABD-14763BB53F24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DE25A3A-F235-4D06-822D-D5FA7E2525DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DE25A3A-F235-4D06-822D-D5FA7E2525DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DE25A3A-F235-4D06-822D-D5FA7E2525DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DE25A3A-F235-4D06-822D-D5FA7E2525DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4644C44-10EC-46D7-8374-A8F496309671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4644C44-10EC-46D7-8374-A8F496309671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4644C44-10EC-46D7-8374-A8F496309671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4644C44-10EC-46D7-8374-A8F496309671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5A7ED859-C6A9-4E9E-BABD-14763BB53F24} = {3EC271DC-3312-404A-8B65-FC49398E632D}
-		{7DE25A3A-F235-4D06-822D-D5FA7E2525DE} = {3EC271DC-3312-404A-8B65-FC49398E632D}
+		{A4644C44-10EC-46D7-8374-A8F496309671} = {3EC271DC-3312-404A-8B65-FC49398E632D}
 	EndGlobalSection
 EndGlobal
