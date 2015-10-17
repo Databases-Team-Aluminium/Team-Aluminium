@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGallery", "ArtGallery", "{3EC271DC-3312-404A-8B65-FC49398E632D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGalleryInitialization", "ArtGalleryInitialization", "{3EC271DC-3312-404A-8B65-FC49398E632D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.Models", "ArtGallery.Models\ArtGallery.Models.csproj", "{5A7ED859-C6A9-4E9E-BABD-14763BB53F24}"
 EndProject

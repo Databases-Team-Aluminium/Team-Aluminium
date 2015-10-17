@@ -40,20 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MongoDbModels\Artist.cs" />
-    <Compile Include="MongoDbModels\ArtStyle.cs" />
-    <Compile Include="MongoDbModels\ArtWork.cs" />
+    <Compile Include="People\Artist.cs" />
+    <Compile Include="Common\ArtStyle.cs" />
+    <Compile Include="Exhibits\ArtWork.cs" />
     <Compile Include="Common\ArtWorkStatus.cs" />
     <Compile Include="Common\ArtWorkType.cs" />
-    <Compile Include="MongoDbModels\Country.cs" />
-    <Compile Include="MongoDbModels\Department.cs" />
-    <Compile Include="MongoDbModels\Employee.cs" />
-    <Compile Include="MongoDbModels\Person.cs" />
+    <Compile Include="Places\Country.cs" />
+    <Compile Include="Structures\Department.cs" />
+    <Compile Include="People\Employee.cs" />
+    <Compile Include="People\Contracts\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntityFrameworkModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

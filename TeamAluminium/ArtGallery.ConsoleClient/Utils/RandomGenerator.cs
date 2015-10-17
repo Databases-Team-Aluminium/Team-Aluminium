@@ -5,7 +5,7 @@
 
     public class RandomGenerator
     {
-        private const string Alphabet = "ABCDEFGHIJKLMNOPQRTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        private const string Alphabet = "ABCDEFGHIJKLMNOPQRTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
         private readonly Random random;
 

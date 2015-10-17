@@ -1,16 +1,21 @@
-﻿namespace ArtGallery.ConsoleClient
+﻿namespace ArtGallery.ConsoleClient.DataImporters
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
 
+    using Common;
+    using Contracts;
     using Models.Common;
-    using Models.MongoDbModels;
+    using Models.Exhibits;
+    using Models.People;
+    using Models.Places;
+    using Models.Structures;
     using MongoDB.Driver;
     using Utils;
 
-    public class MongoDbDataImporter
+    public class MongoDbDataImporter : IDataImporter, IObservable
     {
         private const string ConnetionString = "mongodb://localhost:27017";
         private const string DbName = "artgallerydb";
@@ -18,12 +23,53 @@
         private const int NumberOfArtists = 100;
         private const int NumberOfEmployees = 50;
 
-        public void ImportSampleData(TextWriter tw)
+        private ICollection<IObserver> subscribers;
+        private Notification state;
+
+        public MongoDbDataImporter()
         {
+            this.subscribers = new List<IObserver>();
+        }
+
+        public void ImportData()
+        {
+            this.ChangeState(new Notification
+            {
+                Message = "Importing data..."
+            });
+
             MongoDatabase db = this.GetDatabase();
-            tw.WriteLine(value: "Writing data...");
             this.WriteDataToDb(db);
-            tw.WriteLine(value: "Done.");
+
+            this.ChangeState(new Notification
+            {
+                Message = "Done."
+            });
+        }
+
+
+        public void Subscribe(IObserver observer)
+        {
+            this.subscribers.Add(observer);
+        }
+
+        public void Unsubscribe(IObserver observer)
+        {
+            this.subscribers.Remove(observer);
+        }
+
+        public void ChangeState(Notification notification)
+        {
+            this.state = notification;
+            this.Notify();
+        }
+
+        public void Notify()
+        {
+            foreach (IObserver subscriber in this.subscribers)
+            {
+                subscriber.Update(this.state);
+            }
         }
 
         private MongoDatabase GetDatabase()
@@ -164,8 +210,8 @@
                 {
                     artwork.DateSold = random
                         .GetRandomDate(
-                        start: new DateTime(year: 2010, month: 01, day: 01),
-                        end: new DateTime(year: 2014, month: 12, day: 31));
+                        start: new DateTime(year: 2010, month: 01, day: 01, hour: 00, minute: 00, second: 00),
+                        end: new DateTime(year: 2014, month: 12, day: 31, hour: 23, minute: 59, second: 59));
                 }
 
                 artWorks.Add(artwork);

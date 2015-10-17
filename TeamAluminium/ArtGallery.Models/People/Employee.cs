@@ -1,5 +1,7 @@
-﻿namespace ArtGallery.Models.MongoDbModels
+﻿namespace ArtGallery.Models.People
 {
+    using Contracts;
+
     public class Employee : Person
     {
         public string EmployeeIdentifier { get; set; }
