@@ -12,6 +12,6 @@
         
         public ArtWorkStatus Status { get; set; }
 
-        public Artist Artist { get; set; }
+        public int ArtistId { get; set; }
     }
 }
