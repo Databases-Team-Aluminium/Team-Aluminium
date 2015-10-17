@@ -41,10 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MongoDbModels\Artist.cs" />
+    <Compile Include="MongoDbModels\ArtStyle.cs" />
     <Compile Include="MongoDbModels\ArtWork.cs" />
     <Compile Include="Common\ArtWorkStatus.cs" />
     <Compile Include="Common\ArtWorkType.cs" />
     <Compile Include="MongoDbModels\Country.cs" />
+    <Compile Include="MongoDbModels\Department.cs" />
+    <Compile Include="MongoDbModels\Employee.cs" />
     <Compile Include="MongoDbModels\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

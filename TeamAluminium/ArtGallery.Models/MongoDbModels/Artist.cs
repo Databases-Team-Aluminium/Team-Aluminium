@@ -2,8 +2,7 @@
 {
     public class Artist : Person
     {
-        public Artist()
-        {
-        }
+        public ArtStyle Style { get; set; }
     }
 }
+

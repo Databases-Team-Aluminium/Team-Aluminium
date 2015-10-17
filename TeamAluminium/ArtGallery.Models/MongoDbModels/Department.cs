@@ -1,6 +1,6 @@
 ﻿namespace ArtGallery.Models.MongoDbModels
 {
-    public class Country
+    public class Department
     {
         public int Id { get; set; }
 

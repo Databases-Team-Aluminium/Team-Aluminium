@@ -77,6 +77,7 @@
   <ItemGroup>
     <Content Include="Data\ArtWorkNames.txt" />
     <Content Include="Data\CountryNames.txt" />
+    <Content Include="Data\DepartmentNames.txt" />
     <Content Include="Data\PeopleNames\FirstNames.txt" />
     <Content Include="Data\PeopleNames\LastNames.txt" />
   </ItemGroup>
