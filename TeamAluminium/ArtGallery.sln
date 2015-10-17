@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGallery", "ArtGallery", "{3EC271DC-3312-404A-8B65-FC49398E632D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGalleryInitialization", "ArtGalleryInitialization", "{3EC271DC-3312-404A-8B65-FC49398E632D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.Models", "ArtGallery.Models\ArtGallery.Models.csproj", "{5A7ED859-C6A9-4E9E-BABD-14763BB53F24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.ConsoleClient", "ArtGallery.ConsoleClient\ArtGallery.ConsoleClient.csproj", "{A4644C44-10EC-46D7-8374-A8F496309671}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGalleryManipulations", "ArtGalleryManipulations", "{B0F36574-C508-472A-BE67-3E81D1AA59AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.LoadExcelReportsImportDataMongoDbToMsSql", "01.LoadExcelReportsImportDataMongoDbToMsSql\01.LoadExcelReportsImportDataMongoDbToMsSql.csproj", "{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,10 @@ Global
 		{A4644C44-10EC-46D7-8374-A8F496309671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4644C44-10EC-46D7-8374-A8F496309671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4644C44-10EC-46D7-8374-A8F496309671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5A7ED859-C6A9-4E9E-BABD-14763BB53F24} = {3EC271DC-3312-404A-8B65-FC49398E632D}
 		{A4644C44-10EC-46D7-8374-A8F496309671} = {3EC271DC-3312-404A-8B65-FC49398E632D}
+		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 	EndGlobalSection
 EndGlobal

@@ -6,8 +6,9 @@
     using System.Linq;
     using System.Xml.Serialization;
 
-    using ArtGallery.Models.MongoDbModels;
     using ArtGallery.Models.XmlModels;
+    using ArtGallery.Models.People;
+    using ArtGallery.Models.Exhibits;
     using ArtGallery.Models.Common;
 
     public class XmlImporter : IImporter
@@ -73,6 +74,22 @@
             }
 
             return result;
+        }
+
+
+        public ICollection<Models.Places.Country> GetCountries()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollection<Models.Structures.Department> GetDepartments()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollection<Employee> GetEmployees()
+        {
+            throw new NotImplementedException();
         }
     }
 }
