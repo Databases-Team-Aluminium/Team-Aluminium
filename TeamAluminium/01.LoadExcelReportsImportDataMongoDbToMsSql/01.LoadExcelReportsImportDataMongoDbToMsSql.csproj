@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_01.LoadExcelReportsImportDataMongoDbToMsSql</RootNamespace>
-    <AssemblyName>_01.LoadExcelReportsImportDataMongoDbToMsSql</AssemblyName>
+    <AssemblyName>01.LoadExcelReportsImportDataMongoDbToMsSql</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
