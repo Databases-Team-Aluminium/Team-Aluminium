@@ -9,7 +9,7 @@
     using ArtGallery.Models.Common;
     using ArtGallery.Models.MongoDbModels;
 
-   public class TxtImporter : IImporter
+    public class TxtImporter : IImporter
     {
         private const string UpperCaseLetters = "ABCDEFGHIJKLMNOPQRTUVWXYZ";
         private const int NumberOfArtists = 100;

@@ -7,7 +7,7 @@
     {
         public static void Main()
         {
-            var importer = new TxtImporter();
+            var importer = new XmlImporter();
 
             new MongoDbDataImporter(importer).ImportSampleData(Console.Out);
         }

@@ -47,6 +47,10 @@
     <Compile Include="MongoDbModels\Country.cs" />
     <Compile Include="MongoDbModels\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlModels\XmlArtist.cs" />
+    <Compile Include="XmlModels\XmlArtistRoot.cs" />
+    <Compile Include="XmlModels\XmlArtWork.cs" />
+    <Compile Include="XmlModels\XmlArtworkRoot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EntityFrameworkModels\" />

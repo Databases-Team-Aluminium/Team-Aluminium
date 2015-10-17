@@ -3,10 +3,10 @@
     using ArtGallery.Models.MongoDbModels;
     using System.Collections.Generic;
 
-  public  interface IImporter
+    public interface IImporter
     {
-      ICollection<Artist> GetArtists();
+        ICollection<Artist> GetArtists();
 
-      ICollection<ArtWork> GetArtworks();
+        ICollection<ArtWork> GetArtworks();
     }
 }

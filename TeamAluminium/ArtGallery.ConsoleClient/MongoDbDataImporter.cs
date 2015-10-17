@@ -19,7 +19,6 @@
             this.importer = importer;
         }
 
-
         public void ImportSampleData(TextWriter tw)
         {
             string connectionString = "mongodb://localhost:27017";

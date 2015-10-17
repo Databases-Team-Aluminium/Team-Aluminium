@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Importers\IImporter.cs" />
     <Compile Include="Importers\TxtImporter.cs" />
+    <Compile Include="Importers\XmlImporter.cs" />
     <Compile Include="MongoDbDataImporter.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,11 +78,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Artists.xml" />
+    <Content Include="Data\Xml\Artists.xml" />
     <Content Include="Data\ArtWorkNames.txt" />
     <Content Include="Data\CountryNames.txt" />
     <Content Include="Data\PeopleNames\FirstNames.txt" />
     <Content Include="Data\PeopleNames\LastNames.txt" />
+    <Content Include="Data\Xml\ArtWorks.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
