@@ -1,14 +1,14 @@
 ﻿namespace ArtGallery.ConsoleClient
 {
+    using System;
     using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
 
+    using Models.Common;
     using Models.MongoDbModels;
     using MongoDB.Driver;
     using Utils;
-    using System.IO;
-    using System;
-    using System.Linq;
-    using Models.Common;
 
     public class MongoDbDataImporter
     {
@@ -102,7 +102,7 @@
             // Write employees to db
             generatedEmployees.ForEach(e => employees.Save(e));
         }
-        
+
         private ICollection<Artist> GetArtists()
         {
             RandomGenerator random = RandomGenerator.Create();
@@ -151,13 +151,24 @@
             var artWorks = new HashSet<ArtWork>();
             for (int i = 0; i < 100; i++)
             {
-                artWorks.Add(new ArtWork
+                var artwork = new ArtWork
                 {
                     Id = i + 1,
                     Title = names[i],
-                    Type = (ArtWorkType)random.GetIntegerBetween(0, 9),
-                    Status = ArtWorkStatus.ForExhibition
-                });
+                    Type = (ArtWorkType)random.GetIntegerBetween(min: 0, max: 9),
+                    Status = (ArtWorkStatus)random.GetIntegerBetween(min: 0, max: 3),
+                    Value = random.GetIntegerBetween(min: 10000, max: 10000000)
+                };
+
+                if (artwork.Status == ArtWorkStatus.Sold)
+                {
+                    artwork.DateSold = random
+                        .GetRandomDate(
+                        start: new DateTime(year: 2010, month: 01, day: 01),
+                        end: new DateTime(year: 2014, month: 12, day: 31));
+                }
+
+                artWorks.Add(artwork);
             }
 
             return artWorks;

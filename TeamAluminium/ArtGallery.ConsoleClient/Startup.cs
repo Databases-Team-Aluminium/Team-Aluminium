@@ -6,7 +6,11 @@
     {
         public static void Main()
         {
-            new MongoDbDataImporter().ImportSampleData(Console.Out);
+            var importer = new MongoDbDataImporter();
+            importer.ImportSampleData(Console.Out);
+
+            var builder = new ExcelReportsBuilder(Console.Out);
+            builder.BuildAnnualReports();
         }
     }
 }
