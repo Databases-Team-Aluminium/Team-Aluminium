@@ -149,7 +149,5 @@
             // Write employees to db
             generatedEmployees.ForEach(e => employees.Save(e));
         }
-
-
     }
 }
