@@ -1,6 +1,5 @@
 ﻿namespace ArtGallery.EntityFrameworkModels.Exhibits
 {
-
     using System;
     using ArtGallery.Models.Common;
     using ArtGallery.EntityFrameworkModels.People;
