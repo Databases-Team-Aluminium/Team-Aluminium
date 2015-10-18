@@ -12,7 +12,7 @@
     {
         public static void Main()
         {
-            // To be refactored. Not HQC enough
+            // To be refactored. Not really HQC
             System.Console.WriteLine("Started...");
             var ctx = new ArtGalleryDbContext();
             GetArtWorkReport(ctx);
