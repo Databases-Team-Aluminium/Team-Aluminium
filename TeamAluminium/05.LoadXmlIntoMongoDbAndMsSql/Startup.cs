@@ -1,10 +1,10 @@
-﻿namespace ArtGallery.ConsoleClient
+﻿namespace LoadXmlIntoMongoDbAndMsSql
 {
     public class Startup
     {
         public static void Main()
         {
-            Client.Instance.SetupDb();
+            Client.Instance.Run();
         }
     }
 }

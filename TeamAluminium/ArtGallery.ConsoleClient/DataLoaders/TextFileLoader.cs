@@ -1,19 +1,20 @@
-﻿namespace ArtGallery.ConsoleClient.Importers
+﻿namespace ArtGallery.ConsoleClient.DataLoaders
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
 
-    using ArtGallery.ConsoleClient.Utils;
-    using ArtGallery.Models.People;
-    using ArtGallery.Models.Exhibits;
-    using ArtGallery.Models.Common;
-    using ArtGallery.Models.Places;
-    using ArtGallery.Models.Structures;
+    using Contracts;
+    using Models.Common;
+    using Models.Exhibits;
+    using Models.People;
+    using Models.Places;
+    using Models.Structures;
+    using Utils;
 
 
-    public class TxtFileImporter : IImporter
+    public class TextFileLoader : IDataLoader
     {
         private const string UpperCaseLetters = "ABCDEFGHIJKLMNOPQRTUVWXYZ";
         private const int NumberOfArtists = 100;

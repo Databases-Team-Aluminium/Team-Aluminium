@@ -1,20 +1,17 @@
 ﻿namespace ArtGallery.ConsoleClient.DataImporters
 {
-    using System;
     using System.Collections.Generic;
-    using System.IO;
     using System.Linq;
 
     using Common;
     using Contracts;
-    using Models.Common;
     using Models.Exhibits;
     using Models.People;
     using Models.Places;
     using Models.Structures;
     using MongoDB.Driver;
     using Utils;
-    using ArtGallery.ConsoleClient.Importers;
+    using DataLoaders.Contracts;
 
     public class MongoDbDataImporter : IDataImporter, IObservable
     {
@@ -22,13 +19,13 @@
         private const string DbName = "artgallerydb";
 
 
-        private ICollection<IObserver> subscribers;
+        private readonly ICollection<IObserver> subscribers;
+        private readonly IDataLoader dataLoader;
         private Notification state;
-        private IImporter importer;
 
-        public MongoDbDataImporter(IImporter importer)
+        public MongoDbDataImporter(IDataLoader loader)
         {
-            this.importer = importer;
+            this.dataLoader = loader;
             this.subscribers = new List<IObserver>();
         }
 
@@ -39,7 +36,7 @@
                 Message = "Importing data..."
             });
 
-            MongoDatabase db = this.GetDatabase();
+            MongoDatabase db = this.GetDatabase(DbName);
             this.WriteDataToDb(db);
 
             this.ChangeState(new Notification
@@ -73,20 +70,20 @@
             }
         }
 
-        private MongoDatabase GetDatabase()
+        private MongoDatabase GetDatabase(string dbName)
         {
             var client = new MongoClient(ConnetionString);
             MongoServer server = client.GetServer();
-            return server.GetDatabase(DbName);
+            return server.GetDatabase(dbName);
         }
 
         private void WriteDataToDb(MongoDatabase db)
         {
-            List<Artist> generatedArtists = this.importer.GetArtists().ToList();
-            List<ArtWork> generatedArtworks = this.importer.GetArtworks().ToList();
-            List<Country> generatedCountries = this.importer.GetCountries().ToList();
-            List<Department> generatedDepartments = this.importer.GetDepartments().ToList();
-            List<Employee> generatedEmployees = this.importer.GetEmployees().ToList();
+            List<Artist> generatedArtists = this.dataLoader.GetArtists().ToList();
+            List<ArtWork> generatedArtworks = this.dataLoader.GetArtworks().ToList();
+            List<Country> generatedCountries = this.dataLoader.GetCountries().ToList();
+            List<Department> generatedDepartments = this.dataLoader.GetDepartments().ToList();
+            List<Employee> generatedEmployees = this.dataLoader.GetEmployees().ToList();
 
             RandomGenerator random = RandomGenerator.Create();
 
