@@ -5,12 +5,13 @@ namespace ArtGaller.EntityFrameworkData.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ArtGaller.EntityFrameworkData.ArtGalleryDbContext>
+    public sealed class Configuration : DbMigrationsConfiguration<ArtGaller.EntityFrameworkData.ArtGalleryDbContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "ArtGaller.EntityFrameworkData.ArtGalleryDbContext";
+            this.AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationDataLossAllowed = true;
+            this.ContextKey = "ArtGaller.EntityFrameworkData.ArtGalleryDbContext";
         }
 
         protected override void Seed(ArtGaller.EntityFrameworkData.ArtGalleryDbContext context)

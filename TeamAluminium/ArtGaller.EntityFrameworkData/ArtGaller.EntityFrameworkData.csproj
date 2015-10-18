@@ -50,6 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArtGalleryDbContext.cs" />
+    <Compile Include="Migrations\201510181034191_InitialCreate.cs" />
+    <Compile Include="Migrations\201510181034191_InitialCreate.Designer.cs">
+      <DependentUpon>201510181034191_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510181256598_Initial.cs" />
+    <Compile Include="Migrations\201510181256598_Initial.Designer.cs">
+      <DependentUpon>201510181256598_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,6 +70,14 @@
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
       <Name>ArtGallery.EntityFrameworkModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510181034191_InitialCreate.resx">
+      <DependentUpon>201510181034191_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510181256598_Initial.resx">
+      <DependentUpon>201510181256598_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
