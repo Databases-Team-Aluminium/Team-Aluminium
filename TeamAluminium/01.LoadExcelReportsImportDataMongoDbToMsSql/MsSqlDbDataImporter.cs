@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using ArtGaller.EntityFrameworkData;
+    using ArtGallery.EntityFrameworkData;
     using ArtGallery.ConsoleClient.Common;
     using ArtGallery.EntityFrameworkModels.Exhibits;
     using ArtGallery.EntityFrameworkModels.People;
@@ -38,7 +38,7 @@
                 Message = "Done."
             });
         }
-      
+
         public void Subscribe(IObserver observer)
         {
             this.subscribers.Add(observer);
@@ -71,7 +71,7 @@
 
             var sqlCountries = country.Select(x => (CountrySql)new CountrySql().InjectFrom(x)).ToList();
 
-           var sqlArtWorks = artWorks.Select(x => (ArtWorkSql)new ArtWorkSql().InjectFrom(x)).ToList();
+            var sqlArtWorks = artWorks.Select(x => (ArtWorkSql)new ArtWorkSql().InjectFrom(x)).ToList();
 
             foreach (var artist in artists)
             {

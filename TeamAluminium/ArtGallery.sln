@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.LoadExcelReportsImportDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkModels", "ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj", "{21CC2D09-833C-46B9-9E34-546C69384C5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGaller.EntityFrameworkData", "ArtGaller.EntityFrameworkData\ArtGaller.EntityFrameworkData.csproj", "{D460447D-9C1C-4CA7-86B8-911658AAC30B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkData", "ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj", "{D460447D-9C1C-4CA7-86B8-911658AAC30B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CreateJsonReports", "03.CreateJsonReports\03.CreateJsonReports.csproj", "{52264439-FDB4-453F-8D97-CE219671A04B}"
 EndProject

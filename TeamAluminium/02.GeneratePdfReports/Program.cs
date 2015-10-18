@@ -2,7 +2,7 @@
 {
     using System.IO;
     using System.Linq;
-    using ArtGaller.EntityFrameworkData;
+    using ArtGallery.EntityFrameworkData;
     using iTextSharp.text;
     using iTextSharp.text.pdf;
 

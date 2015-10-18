@@ -96,9 +96,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGaller.EntityFrameworkData.csproj">
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj">
       <Project>{d460447d-9c1c-4ca7-86b8-911658aac30b}</Project>
-      <Name>ArtGaller.EntityFrameworkData</Name>
+      <Name>ArtGallery.EntityFrameworkData</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj">
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>

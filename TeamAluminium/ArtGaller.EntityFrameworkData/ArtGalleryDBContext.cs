@@ -1,9 +1,10 @@
-﻿namespace ArtGaller.EntityFrameworkData
+﻿namespace ArtGallery.EntityFrameworkData
 {
     using System;
     using System.Data.Entity;
     using System.Linq;
 
+    using ArtGallery.EntityFrameworkData.Migrations;
     using ArtGallery.EntityFrameworkModels.Exhibits;
     using ArtGallery.EntityFrameworkModels.People;
     using ArtGallery.EntityFrameworkModels.Places;
@@ -14,6 +15,7 @@
         public ArtGalleryDbContext()
             : base("ArtGallery")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ArtGalleryDbContext, Configuration>());
         }
 
         public virtual IDbSet<ArtistSql> Artists { get; set; }

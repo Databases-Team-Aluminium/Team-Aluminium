@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using ArtGaller.EntityFrameworkData;
+    using ArtGallery.EntityFrameworkData;
     using ArtGallery.EntityFrameworkModels.Exhibits;
     using ArtGallery.Models.Exhibits;
     using Newtonsoft.Json;

@@ -7,7 +7,7 @@
     using System.IO;
     using System.Linq;
 
-    using ArtGaller.EntityFrameworkData;
+    using ArtGallery.EntityFrameworkData;
     using ArtGallery.EntityFrameworkModels.SalesReport;
 
     public class TransferDataFromExcelToDB

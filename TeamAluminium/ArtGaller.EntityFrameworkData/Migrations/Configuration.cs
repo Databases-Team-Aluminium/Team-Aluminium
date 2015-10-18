@@ -1,11 +1,11 @@
-namespace ArtGaller.EntityFrameworkData.Migrations
+namespace ArtGallery.EntityFrameworkData.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    public sealed class Configuration : DbMigrationsConfiguration<ArtGaller.EntityFrameworkData.ArtGalleryDbContext>
+    public sealed class Configuration : DbMigrationsConfiguration<ArtGallery.EntityFrameworkData.ArtGalleryDbContext>
     {
         public Configuration()
         {
@@ -14,7 +14,7 @@ namespace ArtGaller.EntityFrameworkData.Migrations
             this.ContextKey = "ArtGaller.EntityFrameworkData.ArtGalleryDbContext";
         }
 
-        protected override void Seed(ArtGaller.EntityFrameworkData.ArtGalleryDbContext context)
+        protected override void Seed(ArtGallery.EntityFrameworkData.ArtGalleryDbContext context)
         {
         }
     }

@@ -1,4 +1,4 @@
-namespace ArtGaller.EntityFrameworkData.Migrations
+namespace ArtGallery.EntityFrameworkData.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
