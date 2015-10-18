@@ -1,12 +1,13 @@
-﻿namespace ArtGallery.ConsoleClient.Importers
+﻿namespace ArtGallery.ConsoleClient.DataLoaders.Contracts
 {
-    using ArtGallery.Models.Exhibits;
-    using ArtGallery.Models.People;
-    using ArtGallery.Models.Places;
-    using ArtGallery.Models.Structures;
     using System.Collections.Generic;
 
-    public interface IImporter
+    using Models.Exhibits;
+    using Models.People;
+    using Models.Places;
+    using Models.Structures;
+
+    public interface IDataLoader
     {
         ICollection<Artist> GetArtists();
 

@@ -2,11 +2,11 @@
 {
     using System.Xml.Serialization;
 
-    [XmlTypeAttribute(AnonymousType = true)]
-    [XmlRootAttribute(Namespace = "", IsNullable = false)]
+    [XmlType(AnonymousType = true)]
+    [XmlRoot(Namespace = "", IsNullable = false)]
     public class XmlArtistRoot
     {
-        [XmlElementAttribute("Atritst")]
+        [XmlElement("Atritst")]
         public XmlArtist[] Atritsts { get; set; }
     }
 }

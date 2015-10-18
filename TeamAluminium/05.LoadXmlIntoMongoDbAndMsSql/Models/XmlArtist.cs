@@ -2,7 +2,7 @@
 {
     using System.Xml.Serialization;
 
-    [XmlTypeAttribute(AnonymousType = true)]
+    [XmlType(AnonymousType = true)]
     public class XmlArtist
     {
         public string FirstName { get; set; }

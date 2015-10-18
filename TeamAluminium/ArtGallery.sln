@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGalleryManipulations", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.LoadExcelReportsImportDataMongoDbToMsSql", "01.LoadExcelReportsImportDataMongoDbToMsSql\01.LoadExcelReportsImportDataMongoDbToMsSql.csproj", "{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.LoadXmlIntoMongoDbAndMsSql", "05.LoadXmlIntoMongoDbAndMsSql\05.LoadXmlIntoMongoDbAndMsSql.csproj", "{9E295A33-8FD9-441B-8685-456C820E684E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E295A33-8FD9-441B-8685-456C820E684E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E295A33-8FD9-441B-8685-456C820E684E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E295A33-8FD9-441B-8685-456C820E684E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E295A33-8FD9-441B-8685-456C820E684E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +45,6 @@ Global
 		{5A7ED859-C6A9-4E9E-BABD-14763BB53F24} = {3EC271DC-3312-404A-8B65-FC49398E632D}
 		{A4644C44-10EC-46D7-8374-A8F496309671} = {3EC271DC-3312-404A-8B65-FC49398E632D}
 		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
+		{9E295A33-8FD9-441B-8685-456C820E684E} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 	EndGlobalSection
 EndGlobal
