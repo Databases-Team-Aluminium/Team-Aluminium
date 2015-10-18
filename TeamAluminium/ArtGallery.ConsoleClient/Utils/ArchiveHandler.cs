@@ -36,7 +36,7 @@
                 Message = "Unzipping files..."
             });
 
-            ZipFile.CreateFromDirectory(source, destination);
+            ZipFile.ExtractToDirectory(source, destination);
 
             this.ChangeState(new Notification
             {

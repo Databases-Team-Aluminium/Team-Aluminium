@@ -1,14 +1,14 @@
 ﻿namespace LoadExcelReportsImportDataMongoDbToMsSql
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
     using ArtGaller.EntityFrameworkData;
     using ArtGallery.ConsoleClient.Common;
-    using System.Collections.Generic;
-    using Omu.ValueInjecter;
-    using ArtGallery.EntityFrameworkModels.People;
-    using System.Linq;
-    using ArtGallery.EntityFrameworkModels.Places;
     using ArtGallery.EntityFrameworkModels.Exhibits;
-   
+    using ArtGallery.EntityFrameworkModels.People;
+    using ArtGallery.EntityFrameworkModels.Places;
+    using Omu.ValueInjecter;
 
     public class MsSqlDbDataImporter : IObservable
     {
@@ -24,7 +24,6 @@
             this.data = data;
         }
 
-
         public void ImportData()
         {
             this.ChangeState(new Notification
@@ -39,7 +38,6 @@
                 Message = "Done."
             });
         }
-
       
         public void Subscribe(IObserver observer)
         {
@@ -83,11 +81,10 @@
                 sqlArtist.ArtWorks = sqlArtWorks.Where(x => x.Id == sqlArtist.Id).ToList();
                 sqlArtist.Country = sqlCountries.FirstOrDefault(x => x.Id == sqlArtist.CountryId);
 
-                data.Artists.Add(sqlArtist);
+                this.data.Artists.Add(sqlArtist);
             }
 
-            data.SaveChanges();
-
+            this.data.SaveChanges();
         }
     }
 }

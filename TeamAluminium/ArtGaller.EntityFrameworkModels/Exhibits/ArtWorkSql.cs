@@ -1,11 +1,11 @@
 ﻿namespace ArtGallery.EntityFrameworkModels.Exhibits
 {
-
     using System;
-    using ArtGallery.Models.Common;
-    using ArtGallery.EntityFrameworkModels.People;
-    using System.ComponentModel.DataAnnotations.Schema;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    using ArtGallery.EntityFrameworkModels.People;
+    using ArtGallery.Models.Common;
 
     public class ArtWorkSql
     {
@@ -24,7 +24,7 @@
 
         public decimal Value { get; set; }
 
-         [Column(TypeName = "DateTime2")]
+        [Column(TypeName = "DateTime2")]
         public DateTime DateSold { get; set; }
     }
 }

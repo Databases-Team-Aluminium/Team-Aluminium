@@ -53,6 +53,8 @@
     <Compile Include="People\ArtistSql.cs" />
     <Compile Include="Places\CountrySql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesReport\SaleReport.cs" />
+    <Compile Include="SalesReport\YearSaleReport.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">

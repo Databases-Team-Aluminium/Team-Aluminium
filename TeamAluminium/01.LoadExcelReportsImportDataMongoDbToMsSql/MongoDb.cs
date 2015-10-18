@@ -13,13 +13,6 @@
         private const string ConnetionString = "mongodb://localhost:27017";
         private const string DbName = "artgallerydb";
 
-        private MongoDatabase GetDatabase()
-        {
-            var client = new MongoClient(ConnetionString);
-            MongoServer server = client.GetServer();
-            return server.GetDatabase(DbName);
-        }
-
         public ICollection<Artist> GetArtists()
         {
             return this.GetDatabase()
@@ -34,7 +27,6 @@
                 .GetCollection<ArtWork>("artworks")
                 .FindAll()
                 .ToList();
-
         }
 
         public ICollection<Country> GetCountries()
@@ -43,7 +35,13 @@
                 .GetCollection<Country>("countries")
                 .FindAll()
                 .ToList();
+        }
 
+        private MongoDatabase GetDatabase()
+        {
+            var client = new MongoClient(ConnetionString);
+            MongoServer server = client.GetServer();
+            return server.GetDatabase(DbName);
         }
     }
 }

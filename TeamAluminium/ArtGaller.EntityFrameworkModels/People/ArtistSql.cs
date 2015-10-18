@@ -2,11 +2,11 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     using ArtGallery.EntityFrameworkModels.Exhibits;
     using ArtGallery.EntityFrameworkModels.Places;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.ComponentModel.DataAnnotations;
 
     public class ArtistSql
     {
@@ -41,7 +41,5 @@
 
             set { this.artWorks = value; }
         }
-
     }
 }
-

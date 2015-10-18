@@ -2,7 +2,7 @@ namespace ArtGaller.EntityFrameworkData.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class InitialCreate : DbMigration
     {
         public override void Up()
@@ -21,7 +21,7 @@ namespace ArtGaller.EntityFrameworkData.Migrations
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.CountrySqls", t => t.CountryId, cascadeDelete: true)
                 .Index(t => t.CountryId);
-            
+
             CreateTable(
                 "dbo.ArtWorkSqls",
                 c => new
@@ -37,7 +37,7 @@ namespace ArtGaller.EntityFrameworkData.Migrations
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.ArtistSqls", t => t.ArtistId, cascadeDelete: true)
                 .Index(t => t.ArtistId);
-            
+
             CreateTable(
                 "dbo.CountrySqls",
                 c => new
@@ -46,18 +46,17 @@ namespace ArtGaller.EntityFrameworkData.Migrations
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
-            
         }
-        
+
         public override void Down()
         {
-            DropForeignKey("dbo.ArtistSqls", "CountryId", "dbo.CountrySqls");
-            DropForeignKey("dbo.ArtWorkSqls", "ArtistId", "dbo.ArtistSqls");
-            DropIndex("dbo.ArtWorkSqls", new[] { "ArtistId" });
-            DropIndex("dbo.ArtistSqls", new[] { "CountryId" });
-            DropTable("dbo.CountrySqls");
-            DropTable("dbo.ArtWorkSqls");
-            DropTable("dbo.ArtistSqls");
+            this.DropForeignKey("dbo.ArtistSqls", "CountryId", "dbo.CountrySqls");
+            this.DropForeignKey("dbo.ArtWorkSqls", "ArtistId", "dbo.ArtistSqls");
+            this.DropIndex("dbo.ArtWorkSqls", new[] { "ArtistId" });
+            this.DropIndex("dbo.ArtistSqls", new[] { "CountryId" });
+            this.DropTable("dbo.CountrySqls");
+            this.DropTable("dbo.ArtWorkSqls");
+            this.DropTable("dbo.ArtistSqls");
         }
     }
 }

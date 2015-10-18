@@ -1,8 +1,8 @@
 ﻿namespace ArtGallery.EntityFrameworkModels.Places
 {
-    using ArtGallery.EntityFrameworkModels.People;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using ArtGallery.EntityFrameworkModels.People;
 
     public class CountrySql
     {
