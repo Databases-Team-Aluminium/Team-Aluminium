@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.LoadExcelReportsImportDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkModels", "ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj", "{21CC2D09-833C-46B9-9E34-546C69384C5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGaller.EntityFrameworkData", "ArtGaller.EntityFrameworkData\ArtGaller.EntityFrameworkData.csproj", "{D460447D-9C1C-4CA7-86B8-911658AAC30B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{21CC2D09-833C-46B9-9E34-546C69384C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21CC2D09-833C-46B9-9E34-546C69384C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21CC2D09-833C-46B9-9E34-546C69384C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D460447D-9C1C-4CA7-86B8-911658AAC30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D460447D-9C1C-4CA7-86B8-911658AAC30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D460447D-9C1C-4CA7-86B8-911658AAC30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D460447D-9C1C-4CA7-86B8-911658AAC30B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +52,6 @@ Global
 		{A4644C44-10EC-46D7-8374-A8F496309671} = {3EC271DC-3312-404A-8B65-FC49398E632D}
 		{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 		{21CC2D09-833C-46B9-9E34-546C69384C5C} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
+		{D460447D-9C1C-4CA7-86B8-911658AAC30B} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 	EndGlobalSection
 EndGlobal

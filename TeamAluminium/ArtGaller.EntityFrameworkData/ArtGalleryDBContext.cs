@@ -8,8 +8,14 @@
     using ArtGallery.EntityFrameworkModels.People;
     using ArtGallery.EntityFrameworkModels.Places;
 
-    public class ArtGalleryDBContext : DbContext
+    public class ArtGalleryDbContext : DbContext
     {
+        public ArtGalleryDbContext()
+            : base("ArtGallery")
+        {
+
+        }
+
         public virtual IDbSet<ArtistSql> Artists { get; set; }
 
         public virtual IDbSet<ArtWorkSql> ArtWorks { get; set; }

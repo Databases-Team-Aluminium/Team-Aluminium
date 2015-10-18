@@ -1,5 +1,4 @@
-﻿
-namespace ArtGallery.EntityFrameworkModels.Places
+﻿namespace ArtGallery.EntityFrameworkModels.Places
 {
     using ArtGallery.EntityFrameworkModels.People;
     using System.Collections.Generic;
