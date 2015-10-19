@@ -18,6 +18,6 @@
 
         public decimal Value { get; set; }
 
-        public DateTime DateSold { get; set; }
+        public DateTime? DateSold { get; set; }
     }
 }

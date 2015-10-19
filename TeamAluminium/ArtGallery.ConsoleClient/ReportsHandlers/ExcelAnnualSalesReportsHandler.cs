@@ -40,7 +40,8 @@
 
             IEnumerable<ArtWork> soldArtworks = this.GatherSalesInformation();
             List<IGrouping<int, ArtWork>> groupedSoldArtworks = soldArtworks
-                .GroupBy(a => a.DateSold.Year)
+                .Where(a => a.DateSold != null)
+                .GroupBy(a => a.DateSold.Value.Year)
                 .ToList();
 
             foreach (var group in groupedSoldArtworks)

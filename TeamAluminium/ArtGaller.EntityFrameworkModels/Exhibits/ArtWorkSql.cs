@@ -24,7 +24,7 @@
 
         public decimal Value { get; set; }
 
-        [Column(TypeName = "DateTime2")]
-        public DateTime DateSold { get; set; }
+        [Column(TypeName = "Date")]
+        public DateTime? DateSold { get; set; }
     }
 }

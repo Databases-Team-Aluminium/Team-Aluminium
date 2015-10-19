@@ -84,6 +84,10 @@
                         start: new DateTime(year: 2010, month: 01, day: 01, hour: 00, minute: 00, second: 00),
                         end: new DateTime(year: 2014, month: 12, day: 31, hour: 23, minute: 59, second: 59));
                 }
+                else
+                {
+                    artwork.DateSold = null;
+                }
 
                 artWorks.Add(artwork);
             }

@@ -5,6 +5,9 @@
     using ArtGallery.EntityFrameworkData;
     using iTextSharp.text;
     using iTextSharp.text.pdf;
+    using System.Data.Entity;
+    using System;
+    using System.Collections.Generic;
 
     public class Program
     {
@@ -12,24 +15,51 @@
         {
             // Needs refactoring and some fixes with the first date
             var db = new ArtGalleryDbContext();
-            var dataCount = db.ArtWorks.Select(a => a.DateSold).Distinct().ToList();
+            List<int?> yearsOfSales = db
+                .ArtWorks
+                .Select(a => a.DateSold)
+                .Distinct()
+                .AsEnumerable()
+                .Select<DateTime?, int?>(d =>
+                {
+                    if (d.HasValue)
+                    {
+                        return d.GetValueOrDefault().Year;
+                    }
 
-            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-            PdfWriter.GetInstance(doc, new FileStream("../../../Reports/PDF/artworks.pdf", FileMode.Create));
+                    return null;
+                })
+                .Distinct()
+                .ToList();
+
+            var doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            PdfWriter.GetInstance(doc, new FileStream("../../../Reports/PDF/Yearly-Artworks-Sales-Report.pdf", FileMode.Create));
             doc.Open();
 
             PdfPTable titleHeader = new PdfPTable(1);
-            PdfPCell cellHeader = new PdfPCell(new Phrase("Aggregated Artworks Report"));
+            PdfPCell cellHeader = new PdfPCell(new Phrase("Aggregated Yearly Artworks Sales Report"));
             cellHeader.HorizontalAlignment = 1;
             titleHeader.AddCell(cellHeader);
             doc.Add(titleHeader);
 
             decimal grandTotalSum = 0;
-            foreach (var date in dataCount)
+            decimal totalWorthOfSales = 0;
+            decimal totalWorthLeft = 0;
+            foreach (var date in yearsOfSales)
             {
+                string dateGroup = string.Empty;
+                if (!date.HasValue)
+                {
+                    dateGroup = "N/A"; // Not available, i.e not sold yet
+                }
+                else
+                {
+                    dateGroup = date.GetValueOrDefault().ToString();
+                }
+
                 PdfPTable tableHeader = new PdfPTable(5);
                 {
-                    PdfPCell cellHeaderDate = new PdfPCell(new Phrase("Date: " + date.ToShortDateString()));
+                    PdfPCell cellHeaderDate = new PdfPCell(new Phrase("Year: " + dateGroup));
                     cellHeaderDate.Colspan = 5;
                     cellHeaderDate.BackgroundColor = new BaseColor(217, 217, 217);
 
@@ -62,7 +92,20 @@
 
                 PdfPTable tableBody = new PdfPTable(5);
                 {
-                    var artworks = db.ArtWorks.Where(a => a.DateSold == date).ToList();
+                    var artworks = db
+                        .ArtWorks
+                        .AsEnumerable()
+                        .Where(a =>
+                        {
+                            if (date == null)
+                            {
+                                return !a.DateSold.HasValue;
+                            }
+                            
+                            return a.DateSold.GetValueOrDefault().Year == date;
+                        })
+                        .ToList();
+
                     tableBody.DefaultCell.HorizontalAlignment = 1;
 
                     foreach (var artwork in artworks)
@@ -75,12 +118,18 @@
 
                         totalSum += artwork.Value;
                     }
+
                     grandTotalSum += totalSum;
+                    if (date.HasValue)
+                    {
+                        totalWorthOfSales += totalSum;
+                    }
                 }
 
                 PdfPTable tableFooter = new PdfPTable(5);
                 {
-                    PdfPCell totalSumTextCell = new PdfPCell(new Phrase("Total sum for " + date.ToShortDateString() + ": "));
+                    PdfPCell totalSumTextCell = new PdfPCell(new Phrase("Total sum for " +
+                        dateGroup + ": "));
                     totalSumTextCell.Colspan = 4;
                     totalSumTextCell.HorizontalAlignment = 2;
                     tableFooter.AddCell(totalSumTextCell);
@@ -95,18 +144,39 @@
                 doc.Add(tableFooter);
             }
 
-            PdfPTable footer = new PdfPTable(5);
+            totalWorthLeft = grandTotalSum - totalWorthOfSales;
 
-            PdfPCell grandSumTextCell = new PdfPCell(new Phrase("Grand total: "));
-            grandSumTextCell.Colspan = 4;
-            grandSumTextCell.HorizontalAlignment = 2;
-            footer.AddCell(grandSumTextCell);
+            var footer = new PdfPTable(5);
+            var grandSumText = new PdfPCell(new Phrase("Grand total: "));
+            grandSumText.Colspan = 4;
+            grandSumText.HorizontalAlignment = 2;
 
-            PdfPCell grandSumCell = new PdfPCell(new Phrase(grandTotalSum.ToString()));
-            grandSumCell.HorizontalAlignment = 2;
-            footer.AddCell(grandSumCell);
+            var grandSum = new PdfPCell(new Phrase(grandTotalSum.ToString()));
+            grandSum.HorizontalAlignment = 2;
+
+            var totalSoldText = new PdfPCell(new Phrase("Total worth of sales: "));
+            totalSoldText.Colspan = 4;
+            totalSoldText.HorizontalAlignment = 2;
+
+            var totalSoldValue = new PdfPCell(new Phrase(totalWorthOfSales.ToString()));
+            totalSoldValue.HorizontalAlignment = 2;
+
+            var totalRemainingText = new PdfPCell(new Phrase("Total worth remaining: "));
+            totalRemainingText.Colspan = 4;
+            totalRemainingText.HorizontalAlignment = 2;
+
+            var totalRemainingValue = new PdfPCell(new Phrase(totalWorthLeft.ToString()));
+            totalRemainingValue.HorizontalAlignment = 2;
+
+            footer.AddCell(totalSoldText);
+            footer.AddCell(totalSoldValue);
+            footer.AddCell(totalRemainingText);
+            footer.AddCell(totalRemainingValue);
+            footer.AddCell(grandSumText);
+            footer.AddCell(grandSum);
 
             doc.Add(footer);
+
             doc.Close();
         }
     }
