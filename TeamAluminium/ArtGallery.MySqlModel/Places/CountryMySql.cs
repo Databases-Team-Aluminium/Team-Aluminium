@@ -1,8 +1,9 @@
 ﻿namespace ArtGallery.MySqlModel.Places
 {
-    using ArtGallery.MySqlModel.People;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+
+    using ArtGallery.MySqlModel.People;
 
     public class CountryMySql
     {

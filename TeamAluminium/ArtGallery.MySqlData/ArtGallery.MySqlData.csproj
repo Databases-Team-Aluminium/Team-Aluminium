@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="ArtGalleryMySqlDbContext.cs" />
     <Compile Include="ArtGalleryMySqlDbInitializer.cs" />
-    <Compile Include="MyDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

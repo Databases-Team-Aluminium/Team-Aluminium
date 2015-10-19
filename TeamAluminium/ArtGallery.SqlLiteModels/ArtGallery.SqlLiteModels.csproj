@@ -1,22 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1FC67789-9B09-4E71-B257-4E38C4286249}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{64464E5B-1396-4C0A-B8EA-B835E3207167}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArtGallery.ConsoleClient</RootNamespace>
-    <AssemblyName>ArtGallery.ConsoleClient</AssemblyName>
+    <RootNamespace>ArtGallery.SqlLiteModels</RootNamespace>
+    <AssemblyName>ArtGallery.SqlLiteModels</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
-    <NuGetPackageImportStamp>eaedd94e</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>5536a4e2</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -26,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,12 +39,8 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.9.7\lib\net45\MySql.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.Entity.6.9.7\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    <Reference Include="SQLite.CodeFirst, Version=0.9.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.CodeFirst.0.9.8.0\lib\net45\SQLite.CodeFirst.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -70,42 +62,16 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesReport\SaleReportsqlLite.cs" />
+    <Compile Include="SalesReport\YearSaleReportSqlLite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\01.LoadExcelReportsImportDataMongoDbToMsSql\01.LoadExcelReportsImportDataMongoDbToMsSql.csproj">
-      <Project>{4b8e3462-0458-4669-aa6b-3ca8edaf7a9f}</Project>
-      <Name>01.LoadExcelReportsImportDataMongoDbToMsSql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\02.GeneratePdfReports\02.GeneratePdfReports.csproj">
-      <Project>{85861d5c-b0a4-4e5b-9d38-0b8ef89a4a85}</Project>
-      <Name>02.GeneratePdfReports</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\03.CreateJsonReports\04.CreateJsonReports.csproj">
-      <Project>{52264439-fdb4-453f-8d97-ce219671a04b}</Project>
-      <Name>04.CreateJsonReports</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\05.LoadXmlIntoMongoDbAndMsSql\05.LoadXmlIntoMongoDbAndMsSql.csproj">
-      <Project>{9e295a33-8fd9-441b-8685-456c820e684e}</Project>
-      <Name>05.LoadXmlIntoMongoDbAndMsSql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\06.GenerateExelReportsFromMySqlAndSqlLite\06.GenerateExelReportsFromMySqlAndSqlLite.csproj">
-      <Project>{368d5bfb-f292-4be7-a214-de90bcab8c57}</Project>
-      <Name>06.GenerateExelReportsFromMySqlAndSqlLite</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
-      <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
-      <Name>ArtGallery.Setup</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.98.1\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.98.1\build\net45\System.Data.SQLite.Core.targets')" />

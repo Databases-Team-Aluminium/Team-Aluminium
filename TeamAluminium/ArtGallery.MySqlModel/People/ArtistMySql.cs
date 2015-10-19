@@ -1,13 +1,11 @@
 ﻿namespace ArtGallery.MySqlModel.People
 {
-    using ArtGallery.MySqlModel.Exhibits;
-    using ArtGallery.MySqlModel.Places;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
 
-
+    using ArtGallery.MySqlModel.Exhibits;
+    using ArtGallery.MySqlModel.Places;
 
     public class ArtistMySql
     {

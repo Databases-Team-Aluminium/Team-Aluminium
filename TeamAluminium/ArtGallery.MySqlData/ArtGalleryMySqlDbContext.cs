@@ -9,7 +9,6 @@
    
     public class ArtGalleryMySqlDbContext : DbContext
     {
-
         public ArtGalleryMySqlDbContext()
             : base("ArtGalleryMySql")
         {
