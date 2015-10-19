@@ -1,8 +1,6 @@
 ﻿namespace ArtGallery.EntityFrameworkData
 {
-    using System;
     using System.Data.Entity;
-    using System.Linq;
 
     using ArtGallery.EntityFrameworkData.Migrations;
     using ArtGallery.EntityFrameworkModels.Exhibits;
