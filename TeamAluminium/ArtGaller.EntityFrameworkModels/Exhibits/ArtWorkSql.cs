@@ -6,6 +6,7 @@
 
     using ArtGallery.EntityFrameworkModels.People;
     using ArtGallery.Models.Common;
+    using Additional;
 
     public class ArtWorkSql
     {
@@ -26,5 +27,7 @@
 
         [Column(TypeName = "Date")]
         public DateTime? DateSold { get; set; }
+
+        public virtual ArtWorkDescription Description { get; set; }
     }
 }

@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additional\ArtWorkDescription.cs" />
     <Compile Include="Exhibits\ArtWorkSql.cs" />
     <Compile Include="People\ArtistSql.cs" />
     <Compile Include="Places\CountrySql.cs" />

@@ -51,7 +51,7 @@
             XmlReportsGenerator.Instance.Run();
             JsonReportsGenerator.Instance.Run();
             MongoDbAndMsSqlXmlDataImporter.Instance.Run();
-            MySqlAndSqlLiteToExcelReport.Instance.Run();
+            //MySqlAndSqlLiteToExcelReport.Instance.Run();
         }
 
         private static void CreateOutputDirectory()

@@ -78,10 +78,10 @@
                 .GetArtWorksInformation()
                 .ToList();
             
-            MongoCollection<ArtWorkInformation> artists = db
+            MongoCollection<ArtWorkInformation> artWorksInformation = db
                 .GetCollection<ArtWorkInformation>(collectionName: "artworksInformation");
             
-            generatedArtWorksInfo.ForEach(i => artists.Save(i));
+            generatedArtWorksInfo.ForEach(i => artWorksInformation.Save(i));
         }
     }
 }

@@ -5,16 +5,15 @@
     using System.Data;
     using System.Data.OleDb;
     using System.IO;
-    using System.Linq;
 
     using ArtGallery.EntityFrameworkData;
     using ArtGallery.EntityFrameworkModels.SalesReport;
 
     public class TransferDataFromExcelToDB
     {
+        private const string PathToExcelReports = @"../../../Output/SalesReports";
         private const string ConnectionStringFormat = @"Provider=Microsoft.Jet.OLEDB.4.0;" +
-             @"Data Source=..\..\Data\SalesReports\{0};Extended Properties=Excel 8.0";
-
+             @"Data Source=../../../Output/SalesReports/{0};Extended Properties=Excel 8.0";
         private readonly string[] monthNames = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 
         private ArtGalleryDbContext data;
@@ -26,7 +25,7 @@
 
         public void GetFile()
         {
-            var dir = new DirectoryInfo(@"../../Data/SalesReports");
+            var dir = new DirectoryInfo(PathToExcelReports);
 
             this.Traverse(dir);
         }
@@ -60,9 +59,9 @@
             }
         }
 
-        private ICollection<SaleReport> GetSaleReports(string filePath)
+        private ICollection<SalesReport> GetSaleReports(string filePath)
         {
-            var saleRepots = new List<SaleReport>();
+            var saleRepots = new List<SalesReport>();
             var oleDb = new OleDbConnection(string.Format(ConnectionStringFormat, filePath));
             oleDb.Open();
             using (oleDb)
@@ -76,7 +75,7 @@
                     OleDbDataReader reader = oleDbCommand.ExecuteReader();
                     while (reader.Read())
                     {
-                        saleRepots.Add(new SaleReport
+                        saleRepots.Add(new SalesReport
                         {
                             ItemName = (string)reader["Title"],
                             Price = (decimal)reader["SoldFor"]

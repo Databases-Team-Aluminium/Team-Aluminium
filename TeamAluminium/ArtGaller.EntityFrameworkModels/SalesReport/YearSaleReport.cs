@@ -5,11 +5,11 @@
 
     public class YearSaleReport
     {
-        private ICollection<SaleReport> saleReports;
+        private ICollection<SalesReport> saleReports;
 
         public YearSaleReport()
         {
-            this.saleReports = new HashSet<SaleReport>();
+            this.saleReports = new HashSet<SalesReport>();
         }
 
         public int Id { get; set; }
@@ -18,7 +18,7 @@
 
         public DateTime ReportDate { get; set; }
 
-        public virtual ICollection<SaleReport> SaleReports
+        public virtual ICollection<SalesReport> SaleReports
         {
             get { return this.saleReports; }
 

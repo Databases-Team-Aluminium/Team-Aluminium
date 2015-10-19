@@ -5,8 +5,8 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    using ArtGallery.EntityFrameworkModels.Exhibits;
-    using ArtGallery.EntityFrameworkModels.Places;
+    using Exhibits;
+    using Places;
 
     public class ArtistSql
     {

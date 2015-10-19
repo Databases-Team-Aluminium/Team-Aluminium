@@ -37,6 +37,14 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MongoDB.Bson, Version=2.1.0.140, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MongoDB.Bson.2.1.0-rc1\lib\net45\MongoDB.Bson.dll</HintPath>
       <Private>True</Private>
@@ -53,7 +61,12 @@
       <HintPath>..\packages\mongocsharpdriver.2.1.0-rc1\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Omu.ValueInjecter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=c7694541b0ac80e4, processorArchitecture=MSIL">
+      <HintPath>..\packages\valueinjecter.3.1\lib\net45\Omu.ValueInjecter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataImporters\MsSqlDataImporter.cs" />
     <Compile Include="MongoDbAndMsSqlXmlDataImporter.cs" />
     <Compile Include="Common\IObservable.cs" />
     <Compile Include="Common\IObserver.cs" />
@@ -84,15 +98,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Artists.xml" />
-    <Content Include="Data\Art-Works-Descriptions.xml" />
-    <Content Include="Data\TextFile1.txt" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj">
+      <Project>{d460447d-9c1c-4ca7-86b8-911658aac30b}</Project>
+      <Name>ArtGallery.EntityFrameworkData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj">
+      <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
+      <Name>ArtGallery.EntityFrameworkModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
       <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
       <Name>ArtGallery.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Art-Works-Descriptions.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

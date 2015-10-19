@@ -1,6 +1,6 @@
 ﻿namespace ArtGallery.EntityFrameworkModels.SalesReport
 {
-    public class SaleReport
+    public class SalesReport
     {
         public int Id { get; set; }
 

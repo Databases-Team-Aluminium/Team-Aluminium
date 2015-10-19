@@ -30,10 +30,13 @@
         {
             var textFileLoader = new XmlDataLoader();
             var consoleWriter = new TextWriter(Console.Out);
-            var importer = new MongoDbDataImporter(textFileLoader);
+            var mongoDbImporter = new MongoDbDataImporter(textFileLoader);
+            var msSqlDbImporter = new MsSqlDataImporter(textFileLoader);
 
-            importer.Subscribe(consoleWriter);
-            importer.ImportData();
+            mongoDbImporter.Subscribe(consoleWriter);
+            msSqlDbImporter.Subscribe(consoleWriter);
+            mongoDbImporter.ImportData();
+            msSqlDbImporter.ImportData();
         }
     }
 }

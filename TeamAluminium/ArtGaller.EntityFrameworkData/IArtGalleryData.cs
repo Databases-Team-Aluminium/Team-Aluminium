@@ -16,7 +16,7 @@
 
         IRepository<YearSaleReport> YearSaleReport { get; }
 
-        IRepository<SaleReport> SaleReport { get; }
+        IRepository<SalesReport> SaleReport { get; }
 
         int SaveChanges();
     }

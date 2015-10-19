@@ -41,9 +41,9 @@
             get { return this.GetRepository<YearSaleReport>(); }
         }
 
-        public IRepository<SaleReport> SaleReport
+        public IRepository<SalesReport> SaleReport
         {
-            get { return this.GetRepository<SaleReport>(); }
+            get { return this.GetRepository<SalesReport>(); }
         }
 
         public int SaveChanges()
