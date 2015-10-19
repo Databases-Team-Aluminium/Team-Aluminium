@@ -1,9 +1,9 @@
 {
   "Id": 12,
-  "Title": "Knowledge or Poetry",
-  "Type": 6,
-  "Status": 2,
+  "Title": "Broken Component",
+  "Type": 9,
+  "Status": 0,
   "ArtistId": 12,
-  "Value": 8567639.00,
-  "DateSold": "2010-04-08T00:00:00"
+  "Value": 2921995.00,
+  "DateSold": null
 }

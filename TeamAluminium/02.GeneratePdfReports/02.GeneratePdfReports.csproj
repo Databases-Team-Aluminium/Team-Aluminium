@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{85861D5C-B0A4-4E5B-9D38-0B8EF89A4A85}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.GeneratePdfReports</RootNamespace>
-    <AssemblyName>02.GeneratePdfReports</AssemblyName>
+    <RootNamespace>GeneratePdfReports</RootNamespace>
+    <AssemblyName>GeneratePdfReports</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -54,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="PdfReportsGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,9 +73,9 @@
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
       <Name>ArtGallery.EntityFrameworkModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ArtGallery.ConsoleClient\ArtGallery.ConsoleClient.csproj">
+    <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
       <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
-      <Name>ArtGallery.ConsoleClient</Name>
+      <Name>ArtGallery.Setup</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
       <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>

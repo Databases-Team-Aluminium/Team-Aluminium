@@ -1,9 +1,9 @@
 {
   "Id": 50,
-  "Title": "Impression of Dying Image",
-  "Type": 4,
-  "Status": 2,
+  "Title": "Information or Context",
+  "Type": 3,
+  "Status": 3,
   "ArtistId": 50,
-  "Value": 1291250.00,
-  "DateSold": "2010-09-22T00:00:00"
+  "Value": 7108861.00,
+  "DateSold": null
 }

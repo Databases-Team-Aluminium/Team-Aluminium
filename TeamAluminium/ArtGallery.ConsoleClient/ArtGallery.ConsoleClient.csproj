@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4644C44-10EC-46D7-8374-A8F496309671}</ProjectGuid>
+    <ProjectGuid>{1FC67789-9B09-4E71-B257-4E38C4286249}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ArtGallery.ConsoleClient</RootNamespace>
     <AssemblyName>ArtGallery.ConsoleClient</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,29 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
-      <HintPath>..\packages\ExcelDataReader.2.1.2.3\lib\net45\Excel.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MongoDB.Bson, Version=2.1.0.140, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MongoDB.Bson.2.1.0-rc1\lib\net45\MongoDB.Bson.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MongoDB.Driver, Version=2.1.0.140, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MongoDB.Driver.2.1.0-rc1\lib\net45\MongoDB.Driver.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MongoDB.Driver.Core, Version=2.1.0.140, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MongoDB.Driver.Core.2.1.0-rc1\lib\net45\MongoDB.Driver.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MongoDB.Driver.Legacy, Version=2.1.0.140, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\mongocsharpdriver.2.1.0-rc1\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,41 +52,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataLoaders\Contracts\IDataLoader.cs" />
-    <Compile Include="DataLoaders\TextFileLoader.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Common\IObserver.cs" />
-    <Compile Include="Common\Notification.cs" />
-    <Compile Include="DataImporters\Contracts\IDataImporter.cs" />
-    <Compile Include="Common\IObservable.cs" />
-    <Compile Include="ReportsHandlers\Contracts\IReportsHandler.cs" />
-    <Compile Include="Utils\ArchiveHandler.cs" />
-    <Compile Include="ReportsHandlers\ExcelAnnualSalesReportsHandler.cs" />
-    <Compile Include="DataImporters\MongoDbDataImporter.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\RandomGenerator.cs" />
-    <Compile Include="Writers\Contracts\IWriter.cs" />
-    <Compile Include="Writers\TextWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
-      <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
-      <Name>ArtGallery.Models</Name>
+    <ProjectReference Include="..\01.LoadExcelReportsImportDataMongoDbToMsSql\01.LoadExcelReportsImportDataMongoDbToMsSql.csproj">
+      <Project>{4b8e3462-0458-4669-aa6b-3ca8edaf7a9f}</Project>
+      <Name>01.LoadExcelReportsImportDataMongoDbToMsSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\02.GeneratePdfReports\02.GeneratePdfReports.csproj">
+      <Project>{85861d5c-b0a4-4e5b-9d38-0b8ef89a4a85}</Project>
+      <Name>02.GeneratePdfReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\03.CreateJsonReports\04.CreateJsonReports.csproj">
+      <Project>{52264439-fdb4-453f-8d97-ce219671a04b}</Project>
+      <Name>04.CreateJsonReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
+      <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
+      <Name>ArtGallery.Setup</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\ArtWorkNames.txt" />
-    <Content Include="Data\CountryNames.txt" />
-    <Content Include="Data\DepartmentNames.txt" />
-    <Content Include="Data\PeopleNames\FirstNames.txt" />
-    <Content Include="Data\PeopleNames\LastNames.txt" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

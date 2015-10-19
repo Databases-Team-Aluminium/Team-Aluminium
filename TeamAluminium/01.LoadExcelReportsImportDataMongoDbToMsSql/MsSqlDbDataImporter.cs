@@ -4,7 +4,7 @@
     using System.Linq;
 
     using ArtGallery.EntityFrameworkData;
-    using ArtGallery.ConsoleClient.Common;
+    using ArtGallery.Setup.Common;
     using ArtGallery.EntityFrameworkModels.Exhibits;
     using ArtGallery.EntityFrameworkModels.People;
     using ArtGallery.EntityFrameworkModels.Places;
@@ -28,7 +28,7 @@
         {
             this.ChangeState(new Notification
             {
-                Message = "Importing data..."
+                Message = "Transfering data from MongoDb into SQL Server..."
             });
 
             this.WriteDataToDb();

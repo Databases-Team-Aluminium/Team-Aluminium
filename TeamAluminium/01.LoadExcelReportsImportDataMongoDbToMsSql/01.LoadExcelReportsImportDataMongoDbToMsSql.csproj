@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4B8E3462-0458-4669-AA6B-3CA8EDAF7A9F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LoadExcelReportsImportDataMongoDbToMsSql</RootNamespace>
     <AssemblyName>LoadExcelReportsImportDataMongoDbToMsSql</AssemblyName>
@@ -32,6 +32,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -84,7 +87,7 @@
     <Compile Include="IDataProvider.cs" />
     <Compile Include="MongoDb.cs" />
     <Compile Include="MsSqlDbDataImporter.cs" />
-    <Compile Include="Startup.cs" />
+    <Compile Include="MsSqlExcelAndMongoDbDataImporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TransferDataFromExcelToDB.cs" />
   </ItemGroup>
@@ -104,9 +107,9 @@
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
       <Name>ArtGallery.EntityFrameworkModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ArtGallery.ConsoleClient\ArtGallery.ConsoleClient.csproj">
+    <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
       <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
-      <Name>ArtGallery.ConsoleClient</Name>
+      <Name>ArtGallery.Setup</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
       <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
