@@ -67,9 +67,9 @@
         {
             var artists = this.dataProvider.GetArtists();
             var artWorks = this.dataProvider.GetArtWorks();
-            var country = this.dataProvider.GetCountries();
+            var countries = this.dataProvider.GetCountries();
 
-            var sqlCountries = country.Select(x => (CountrySql)new CountrySql().InjectFrom(x)).ToList();
+            var sqlCountries = countries.Select(x => (CountrySql)new CountrySql().InjectFrom(x)).ToList();
 
             var sqlArtWorks = artWorks.Select(x => (ArtWorkSql)new ArtWorkSql().InjectFrom(x)).ToList();
 
@@ -78,7 +78,7 @@
                 var sqlArtist = new ArtistSql();
                 sqlArtist.InjectFrom(artist);
 
-                sqlArtist.ArtWorks = sqlArtWorks.Where(x => x.Id == sqlArtist.Id).ToList();
+                sqlArtist.ArtWorks = sqlArtWorks.Where(x => x.ArtistId == sqlArtist.Id).ToList();
                 sqlArtist.Country = sqlCountries.FirstOrDefault(x => x.Id == sqlArtist.CountryId);
 
                 this.data.Artists.Add(sqlArtist);

@@ -1,6 +1,7 @@
 ﻿namespace ArtGallery.ConsoleClient
 {
     using CreateJsonReports;
+    using GenerateExelReportsFromMySqlAndSqlLite;
     using GeneratePdfReports;
     using LoadExcelReportsImportDataMongoDbToMsSql;
     using LoadXmlIntoMongoDbAndMsSql;
@@ -42,11 +43,12 @@
 
             CreateOutputDirectory();
 
-            SetupClient.Instance.Run();
-            MsSqlExcelAndMongoDbDataImporter.Instance.Run();
-            PdfReportsGenerator.Instance.Run();
-            JsonReportsGenerator.Instance.Run();
-            MongoDbAndMsSqlXmlDataImporter.Instance.Run();
+            //SetupClient.Instance.Run();
+            //MsSqlExcelAndMongoDbDataImporter.Instance.Run();
+            //PdfReportsGenerator.Instance.Run();
+            //JsonReportsGenerator.Instance.Run();
+            //MongoDbAndMsSqlXmlDataImporter.Instance.Run();
+            MySqlAndSqlLiteToExelReport.Instance.Run();
         }
 
         private static void CreateOutputDirectory()

@@ -16,6 +16,7 @@
             : base("ArtGallery")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ArtGalleryDbContext, Configuration>());
+           // Database.SetInitializer(new DropCreateDatabaseAlways<ArtGalleryDbContext>());
         }
 
         public virtual IDbSet<ArtistSql> Artists { get; set; }

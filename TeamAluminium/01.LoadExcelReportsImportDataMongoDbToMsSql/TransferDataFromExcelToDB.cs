@@ -53,6 +53,7 @@
                         this.data.YearSaleReport.Add(yearSaleReport);
                         this.data.SaveChanges();
                     }
+
                 }
 
                 this.Traverse(dir);
