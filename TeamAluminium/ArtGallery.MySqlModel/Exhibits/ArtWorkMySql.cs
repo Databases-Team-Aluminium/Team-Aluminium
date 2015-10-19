@@ -1,10 +1,10 @@
 ﻿namespace ArtGallery.MySqlModel.Exhibits
 {
-    using ArtGallery.Models.Common;
-    using ArtGallery.MySqlModel.People;
     using System;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
+
+    using ArtGallery.Models.Common;
+    using ArtGallery.MySqlModel.People;
 
     public class ArtWorkMySql
     {

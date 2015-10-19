@@ -1,11 +1,19 @@
 ﻿namespace GenerateExelReportsFromMySqlAndSqlLite
 {
+    using System;
+
     using ArtGallery.MySqlData;
     using ArtGallery.MySqlModel.Places;
+    using ArtGallery.SqlLiteData;
+    using ArtGallery.SqlLiteModels.SalesReport;
 
     public class MySqlAndSqlLiteToExcelReport
     {
         private static MySqlAndSqlLiteToExcelReport instance;
+
+        private MySqlAndSqlLiteToExcelReport()
+        {
+        }
 
         public static MySqlAndSqlLiteToExcelReport Instance
         {
@@ -20,24 +28,25 @@
             }
         }
 
-        private MySqlAndSqlLiteToExcelReport()
-        {
-            
-        }
-
         public void Run()
         {
-             //string PathToReportsArchive = @"../../Data/SalesReports.zip";
-             //string PathToReports = @"../../Data/SalesReports";
+            var dataMySql = new ArtGalleryMySqlDbContext();
+            var dataSqlLite = new ArtGallerySqlLiteDbContext();
 
-            var data = new ArtGalleryMySqlDbContext();
-
-            data.Country.Add (new CountryMySql
+            dataMySql.Country.Add(new CountryMySql
             {
-                Name = "Canada" 
+                Name = "Canada"
             });
 
-            data.SaveChanges();
+            dataMySql.SaveChanges();
+
+            dataSqlLite.YearSaleReport.Add(new YearSaleReportSqlLite
+            {
+                ReportDate = DateTime.Now,
+                Year = DateTime.Now.Year
+            });
+
+            dataSqlLite.SaveChanges();
         }
     }
 }

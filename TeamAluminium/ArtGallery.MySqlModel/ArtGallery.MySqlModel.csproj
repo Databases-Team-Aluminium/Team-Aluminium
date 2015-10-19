@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Exhibits\ArtWorkMySql.cs" />
     <Compile Include="People\ArtistMySql.cs" />
     <Compile Include="Places\CountryMySql.cs" />
