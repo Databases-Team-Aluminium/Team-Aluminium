@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGalleryInitialization", "ArtGalleryInitialization", "{3EC271DC-3312-404A-8B65-FC49398E632D}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkData", "ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj", "{D460447D-9C1C-4CA7-86B8-911658AAC30B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CreateJsonReports", "03.CreateJsonReports\03.CreateJsonReports.csproj", "{52264439-FDB4-453F-8D97-CE219671A04B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CreateJsonReports", "03.CreateJsonReports\04.CreateJsonReports.csproj", "{52264439-FDB4-453F-8D97-CE219671A04B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.GeneratePdfReports", "02.GeneratePdfReports\02.GeneratePdfReports.csproj", "{85861D5C-B0A4-4E5B-9D38-0B8EF89A4A85}"
 EndProject

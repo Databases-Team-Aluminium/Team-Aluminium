@@ -62,7 +62,7 @@
             RandomGenerator random = RandomGenerator.Create();
             List<string> names = File
                 .ReadAllText(path: "../../Data/ArtWorkNames.txt")
-                .Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)
+                .Split(new char[] { '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries)
                 .ToList();
 
             var artWorks = new HashSet<ArtWork>();
@@ -119,7 +119,7 @@
         {
             List<string> departmentNames = File
                 .ReadAllText(path: "../../Data/DepartmentNames.txt")
-                .Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries)
+                .Split(new char[] { '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries)
                 .ToList();
 
             var departments = new List<Department>();

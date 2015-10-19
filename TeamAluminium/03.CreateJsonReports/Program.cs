@@ -1,10 +1,9 @@
 ﻿namespace CreateJsonReports
 {
-    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+
     using ArtGallery.EntityFrameworkData;
-    using ArtGallery.EntityFrameworkModels.Exhibits;
     using ArtGallery.Models.Exhibits;
     using Newtonsoft.Json;
 

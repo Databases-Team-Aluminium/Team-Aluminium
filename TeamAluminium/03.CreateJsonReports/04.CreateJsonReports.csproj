@@ -7,8 +7,8 @@
     <ProjectGuid>{52264439-FDB4-453F-8D97-CE219671A04B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_03.CreateJsonReports</RootNamespace>
-    <AssemblyName>03.CreateJsonReports</AssemblyName>
+    <RootNamespace>CreateJsonReports</RootNamespace>
+    <AssemblyName>04.CreateJsonReports</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
