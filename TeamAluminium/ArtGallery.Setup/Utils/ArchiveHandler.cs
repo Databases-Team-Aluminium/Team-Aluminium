@@ -18,7 +18,7 @@
         {
             this.ChangeState(new Notification
             {
-                Message = "Zipping files..."
+                Message = "Zipping Excel reports..."
             });
 
             ZipFile.CreateFromDirectory(source, destination);

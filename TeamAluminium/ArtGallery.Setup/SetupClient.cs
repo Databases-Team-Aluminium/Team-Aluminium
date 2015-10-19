@@ -8,8 +8,8 @@
 
     public class SetupClient
     {
-        private const string PathToAnnualReportsArchive = @"../../Data/SalesReports.zip";
-        private const string PathToAnnualReports = @"../../Data/SalesReports";
+        private const string PathToAnnualReportsArchive = @"../../../Output/SalesReports.zip";
+        private const string PathToAnnualReports = @"../../../Output/SalesReports";
 
         private static SetupClient instance;
 

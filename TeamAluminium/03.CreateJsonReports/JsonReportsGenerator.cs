@@ -10,6 +10,8 @@
 
     public class JsonReportsGenerator
     {
+        private const string PathToJsonReports = "../../../Output/Json-Reports";
+
         private static JsonReportsGenerator instance;
 
         public static JsonReportsGenerator Instance
@@ -62,8 +64,8 @@
 
         private void SaveReport(ArtWork report, int id)
         {
-            var jsonReport = JsonConvert.SerializeObject(report, Formatting.Indented);
-            File.WriteAllText("../../../Reports/JSON/" + id + ".json", jsonReport.ToString());
+            string jsonReport = JsonConvert.SerializeObject(report, Formatting.Indented);
+            File.WriteAllText(PathToJsonReports + "/" + id + ".json", jsonReport.ToString());
         }
     }
 }

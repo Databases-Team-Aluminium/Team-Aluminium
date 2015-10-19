@@ -14,7 +14,7 @@
 
     public class ExcelAnnualSalesReportsHandler : IReportsHandler, IObservable
     {
-        private const string PathToSalesReportsBaseFolder = @"../../Data/SalesReports";
+        private const string PathToSalesReportsBaseFolder = @"../../../Output/SalesReports";
         private const string ExcelConnectionString = @"Provider=Microsoft.Jet.OleDB.4.0;" +
                 @"Data Source=" + PathToSalesReportsBaseFolder + "/{1}-{2}-{0}/{0}-Sales-Report.xls; Persist Security Info=false;Extended Properties=Excel 8.0";
         private const string MongoDbConnetionString = "mongodb://localhost:27017";
@@ -33,7 +33,7 @@
         {
             this.ChangeState(new Notification
             {
-                Message = "Creating reports..."
+                Message = "Creating Excel reports..."
             });
 
             RandomGenerator random = RandomGenerator.Create();

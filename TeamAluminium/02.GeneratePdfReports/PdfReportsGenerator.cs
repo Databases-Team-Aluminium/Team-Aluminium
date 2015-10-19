@@ -11,6 +11,8 @@
 
     public class PdfReportsGenerator
     {
+        private const string PathToPdfReports = "../../../Output/Pdf-Reports";
+
         private static PdfReportsGenerator instance;
 
         public static PdfReportsGenerator Instance
@@ -54,7 +56,7 @@
                 .ToList();
 
             var doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
-            PdfWriter.GetInstance(doc, new FileStream("../../../Reports/PDF/Yearly-Artworks-Sales-Report.pdf", FileMode.Create));
+            PdfWriter.GetInstance(doc, new FileStream(PathToPdfReports + "/Yearly-Artworks-Sales-Report.pdf", FileMode.Create));
             doc.Open();
 
             PdfPTable titleHeader = new PdfPTable(1);

@@ -5,9 +5,14 @@
     using LoadExcelReportsImportDataMongoDbToMsSql;
     using LoadXmlIntoMongoDbAndMsSql;
     using Setup;
+    using System.IO;
 
     public class Startup
     {
+        private const string OutputDirectoryPath = "../../../Output";
+        private const string PathToPdfReports = "../../../Output/Pdf-Reports";
+        private const string PathToJsonReports = "../../../Output/Json-Reports";
+
         /// <summary>
         /// Entry point for the console application executing 
         /// all tasks defined in the teamwork assignment.
@@ -35,11 +40,31 @@
             // TODO: Task 5 - XML to SQL Server importing
             // TODO: Task 6 - All
 
+            CreateOutputDirectory();
+
             SetupClient.Instance.Run();
             MsSqlExcelAndMongoDbDataImporter.Instance.Run();
             PdfReportsGenerator.Instance.Run();
             JsonReportsGenerator.Instance.Run();
             MongoDbAndMsSqlXmlDataImporter.Instance.Run();
+        }
+
+        private static void CreateOutputDirectory()
+        {
+            if (!Directory.Exists(OutputDirectoryPath))
+            {
+                Directory.CreateDirectory(OutputDirectoryPath);
+            }
+
+            if (!Directory.Exists(PathToPdfReports))
+            {
+                Directory.CreateDirectory(PathToPdfReports);
+            }
+
+            if (!Directory.Exists(PathToJsonReports))
+            {
+                Directory.CreateDirectory(PathToJsonReports);
+            }
         }
     }
 }
