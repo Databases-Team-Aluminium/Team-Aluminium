@@ -35,9 +35,9 @@
         /// </summary>
         public static void Main()
         {
-            // TODO: Task 1 - Excel to SQL Server importing
+            // TODO: Task 1 - Excel to SQL Server importing / Toma
             // TODO: Task 3 - All
-            // TODO: Task 5 - XML to SQL Server importing
+            // TODO: Task 5 - XML to SQL Server importing / Vasil
             // TODO: Task 6 - All
 
             CreateOutputDirectory();
