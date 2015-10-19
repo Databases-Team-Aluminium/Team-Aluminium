@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtGalleryInitialization", "ArtGalleryInitialization", "{3EC271DC-3312-404A-8B65-FC49398E632D}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.EntityFrameworkData", "ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj", "{D460447D-9C1C-4CA7-86B8-911658AAC30B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CreateJsonReports", "03.CreateJsonReports\04.CreateJsonReports.csproj", "{52264439-FDB4-453F-8D97-CE219671A04B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CreateJsonReports", "04.CreateJsonReports\04.CreateJsonReports.csproj", "{52264439-FDB4-453F-8D97-CE219671A04B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.GeneratePdfReports", "02.GeneratePdfReports\02.GeneratePdfReports.csproj", "{85861D5C-B0A4-4E5B-9D38-0B8EF89A4A85}"
 EndProject
@@ -25,11 +25,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.ConsoleClient", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.LoadXmlIntoMongoDbAndMsSql", "05.LoadXmlIntoMongoDbAndMsSql\05.LoadXmlIntoMongoDbAndMsSql.csproj", "{9E295A33-8FD9-441B-8685-456C820E684E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.GenerateExelReportsFromMySqlAndSqlLite", "06.GenerateExelReportsFromMySqlAndSqlLite\06.GenerateExelReportsFromMySqlAndSqlLite.csproj", "{368D5BFB-F292-4BE7-A214-DE90BCAB8C57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.GenerateExcelReportsFromMySqlAndSqlLite", "06.GenerateExelReportsFromMySqlAndSqlLite\06.GenerateExcelReportsFromMySqlAndSqlLite.csproj", "{368D5BFB-F292-4BE7-A214-DE90BCAB8C57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.MySqlData", "ArtGallery.MySqlData\ArtGallery.MySqlData.csproj", "{C4DB4AF0-65F9-497F-A8B4-BB823FD4A029}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.MySqlModel", "ArtGallery.MySqlModel\ArtGallery.MySqlModel.csproj", "{14992278-261A-4E29-82E5-B45F09006F8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.GenerateXmlReport", "03.GenerateXmlReport\03.GenerateXmlReport.csproj", "{ABE4D86C-327E-4E4E-A3B0-D15ECF131412}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{14992278-261A-4E29-82E5-B45F09006F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14992278-261A-4E29-82E5-B45F09006F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14992278-261A-4E29-82E5-B45F09006F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE4D86C-327E-4E4E-A3B0-D15ECF131412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE4D86C-327E-4E4E-A3B0-D15ECF131412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE4D86C-327E-4E4E-A3B0-D15ECF131412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE4D86C-327E-4E4E-A3B0-D15ECF131412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,5 +107,6 @@ Global
 		{368D5BFB-F292-4BE7-A214-DE90BCAB8C57} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 		{C4DB4AF0-65F9-497F-A8B4-BB823FD4A029} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 		{14992278-261A-4E29-82E5-B45F09006F8A} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
+		{ABE4D86C-327E-4E4E-A3B0-D15ECF131412} = {B0F36574-C508-472A-BE67-3E81D1AA59AB}
 	EndGlobalSection
 EndGlobal

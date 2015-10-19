@@ -48,7 +48,7 @@
             PdfReportsGenerator.Instance.Run();
             JsonReportsGenerator.Instance.Run();
             MongoDbAndMsSqlXmlDataImporter.Instance.Run();
-            MySqlAndSqlLiteToExelReport.Instance.Run();
+            MySqlAndSqlLiteToExcelReport.Instance.Run();
         }
 
         private static void CreateOutputDirectory()

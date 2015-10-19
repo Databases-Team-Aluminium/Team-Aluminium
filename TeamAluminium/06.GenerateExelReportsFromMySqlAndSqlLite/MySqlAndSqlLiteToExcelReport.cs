@@ -2,26 +2,25 @@
 {
     using ArtGallery.MySqlData;
     using ArtGallery.MySqlModel.Places;
-    using System;
 
-    public class MySqlAndSqlLiteToExelReport
+    public class MySqlAndSqlLiteToExcelReport
     {
-        private static MySqlAndSqlLiteToExelReport instance;
+        private static MySqlAndSqlLiteToExcelReport instance;
 
-        public static MySqlAndSqlLiteToExelReport Instance
+        public static MySqlAndSqlLiteToExcelReport Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new MySqlAndSqlLiteToExelReport();
+                    instance = new MySqlAndSqlLiteToExcelReport();
                 }
 
                 return instance;
             }
         }
 
-        private MySqlAndSqlLiteToExelReport()
+        private MySqlAndSqlLiteToExcelReport()
         {
             
         }

@@ -7,8 +7,8 @@
     <ProjectGuid>{368D5BFB-F292-4BE7-A214-DE90BCAB8C57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06.GenerateExelReportsFromMySqlAndSqlLite</RootNamespace>
-    <AssemblyName>06.GenerateExelReportsFromMySqlAndSqlLite</AssemblyName>
+    <RootNamespace>GenerateExcelReportsFromMySqlAndSqlLite</RootNamespace>
+    <AssemblyName>GenerateExcelReportsFromMySqlAndSqlLite</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MySqlAndSqlLiteToExelReport.cs" />
+    <Compile Include="MySqlAndSqlLiteToExcelReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
