@@ -1,25 +1,42 @@
 ﻿namespace GenerateXmlReport
 {
-    using System;
     using System.Globalization;
-    using System.Linq;
     using System.Xml;
     using ArtGallery.EntityFrameworkData;
+    using System.Data.Entity.Infrastructure;
 
     public class XmlReportsGenerator
     {
         private const string XmlReportFilePath = "../../../Output/Xml-Reports/Sales-by-Artists-report.xml";
 
-        public static void Main()
+        private static XmlReportsGenerator instance;
+        
+        public static XmlReportsGenerator Instance
         {
-            ArtGalleryDbContext db = new ArtGalleryDbContext();
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new XmlReportsGenerator();
+                }
 
+                return instance;
+            }
+        }
+
+        private XmlReportsGenerator()
+        {
+        }
+
+        public void Run()
+        {
+            var db = new ArtGalleryDbContext();
             GenerateXmlReport(db, XmlReportFilePath);
         }
 
         private static void GenerateXmlReport(ArtGalleryDbContext db, string xmlReportFilePath)
         {
-            XmlDocument xmlDocument = new XmlDocument();
+            var xmlDocument = new XmlDocument();
             XmlElement rootElement = xmlDocument.CreateElement("sales");
 
 
@@ -29,7 +46,7 @@
                     "INNER JOIN ArtistSqls a on aw.ArtistId=a.Id AND aw.DateSold IS NOT NULL " +
                     "GROUP BY a.FirstName, a.LastName, aw.DateSold";
 
-            var artistSaleReports = db.Database.SqlQuery<ArtistSaleReport>(nativeSqlQuery);
+            DbRawSqlQuery<ArtistSaleReport> artistSaleReports = db.Database.SqlQuery<ArtistSaleReport>(nativeSqlQuery);
 
             foreach (var artistSaleReport in artistSaleReports)
             {

@@ -7,21 +7,21 @@
     using ArtGallery.SqlLiteData;
     using ArtGallery.SqlLiteModels.SalesReport;
 
-    public class MySqlAndSqlLiteToExelReport
+    public class MySqlAndSqlLiteToExcelReport
     {
-        private static MySqlAndSqlLiteToExelReport instance;
+        private static MySqlAndSqlLiteToExcelReport instance;
 
-        private MySqlAndSqlLiteToExelReport()
+        private MySqlAndSqlLiteToExcelReport()
         {
         }
 
-        public static MySqlAndSqlLiteToExelReport Instance
+        public static MySqlAndSqlLiteToExcelReport Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new MySqlAndSqlLiteToExelReport();
+                    instance = new MySqlAndSqlLiteToExcelReport();
                 }
 
                 return instance;

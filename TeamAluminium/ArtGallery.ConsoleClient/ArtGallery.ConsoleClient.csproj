@@ -90,7 +90,11 @@
       <Project>{85861d5c-b0a4-4e5b-9d38-0b8ef89a4a85}</Project>
       <Name>02.GeneratePdfReports</Name>
     </ProjectReference>
-    <ProjectReference Include="..\03.CreateJsonReports\04.CreateJsonReports.csproj">
+    <ProjectReference Include="..\03.GenerateXmlReport\03.GenerateXmlReport.csproj">
+      <Project>{abe4d86c-327e-4e4e-a3b0-d15ecf131412}</Project>
+      <Name>03.GenerateXmlReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\04.CreateJsonReports\04.CreateJsonReports.csproj">
       <Project>{52264439-fdb4-453f-8d97-ce219671a04b}</Project>
       <Name>04.CreateJsonReports</Name>
     </ProjectReference>
@@ -98,9 +102,9 @@
       <Project>{9e295a33-8fd9-441b-8685-456c820e684e}</Project>
       <Name>05.LoadXmlIntoMongoDbAndMsSql</Name>
     </ProjectReference>
-    <ProjectReference Include="..\06.GenerateExelReportsFromMySqlAndSqlLite\06.GenerateExelReportsFromMySqlAndSqlLite.csproj">
+    <ProjectReference Include="..\06.GenerateExelReportsFromMySqlAndSqlLite\06.GenerateExcelReportsFromMySqlAndSqlLite.csproj">
       <Project>{368d5bfb-f292-4be7-a214-de90bcab8c57}</Project>
-      <Name>06.GenerateExelReportsFromMySqlAndSqlLite</Name>
+      <Name>06.GenerateExcelReportsFromMySqlAndSqlLite</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
       <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>

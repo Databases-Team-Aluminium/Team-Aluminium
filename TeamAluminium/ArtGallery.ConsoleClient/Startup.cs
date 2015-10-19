@@ -7,12 +7,14 @@
     using LoadExcelReportsImportDataMongoDbToMsSql;
     using LoadXmlIntoMongoDbAndMsSql;
     using Setup;
+    using GenerateXmlReport;
 
     public class Startup
     {
         private const string OutputDirectoryPath = "../../../Output";
         private const string PathToPdfReports = "../../../Output/Pdf-Reports";
         private const string PathToJsonReports = "../../../Output/Json-Reports";
+        private const string PathToXmlReports = "../../../Output/Xml-Reports";
 
         /// <summary>
         /// Entry point for the console application executing 
@@ -46,9 +48,10 @@
             SetupClient.Instance.Run();
             MsSqlExcelAndMongoDbDataImporter.Instance.Run();
             PdfReportsGenerator.Instance.Run();
+            XmlReportsGenerator.Instance.Run();
             JsonReportsGenerator.Instance.Run();
             MongoDbAndMsSqlXmlDataImporter.Instance.Run();
-            MySqlAndSqlLiteToExelReport.Instance.Run();
+            MySqlAndSqlLiteToExcelReport.Instance.Run();
         }
 
         private static void CreateOutputDirectory()
@@ -66,6 +69,10 @@
             if (!Directory.Exists(PathToJsonReports))
             {
                 Directory.CreateDirectory(PathToJsonReports);
+            }
+            if (!Directory.Exists(PathToXmlReports))
+            {
+                Directory.CreateDirectory(PathToXmlReports);
             }
         }
     }
