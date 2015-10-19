@@ -28,7 +28,7 @@
         {
             this.ChangeState(new Notification
             {
-                Message = "Importing data..."
+                Message = "Importing XML data into MongoDb..."
             });
 
             MongoDatabase db = this.GetDatabase(DbName);

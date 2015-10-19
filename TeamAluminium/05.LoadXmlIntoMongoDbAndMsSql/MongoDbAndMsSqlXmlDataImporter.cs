@@ -5,21 +5,21 @@
     using System;
     using DataLoaders;
 
-    public class Client
+    public class MongoDbAndMsSqlXmlDataImporter
     {
-        private static Client instance;
+        private static MongoDbAndMsSqlXmlDataImporter instance;
 
-        private Client()
+        private MongoDbAndMsSqlXmlDataImporter()
         {
         }
 
-        public static Client Instance
+        public static MongoDbAndMsSqlXmlDataImporter Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new Client();
+                    instance = new MongoDbAndMsSqlXmlDataImporter();
                 }
 
                 return instance;

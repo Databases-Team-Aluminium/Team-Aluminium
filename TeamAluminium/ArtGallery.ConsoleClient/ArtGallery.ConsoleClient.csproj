@@ -72,6 +72,10 @@
       <Project>{52264439-fdb4-453f-8d97-ce219671a04b}</Project>
       <Name>04.CreateJsonReports</Name>
     </ProjectReference>
+    <ProjectReference Include="..\05.LoadXmlIntoMongoDbAndMsSql\05.LoadXmlIntoMongoDbAndMsSql.csproj">
+      <Project>{9e295a33-8fd9-441b-8685-456c820e684e}</Project>
+      <Name>05.LoadXmlIntoMongoDbAndMsSql</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
       <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
       <Name>ArtGallery.Setup</Name>

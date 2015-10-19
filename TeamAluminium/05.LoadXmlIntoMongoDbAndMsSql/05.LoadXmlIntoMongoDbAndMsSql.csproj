@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9E295A33-8FD9-441B-8685-456C820E684E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LoadXmlIntoMongoDbAndMsSql</RootNamespace>
-    <AssemblyName>05.LoadXmlIntoMongoDbAndMsSql</AssemblyName>
+    <AssemblyName>LoadXmlIntoMongoDbAndMsSql</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MongoDB.Bson, Version=2.1.0.140, Culture=neutral, processorArchitecture=MSIL">
@@ -59,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
+    <Compile Include="MongoDbAndMsSqlXmlDataImporter.cs" />
     <Compile Include="Common\IObservable.cs" />
     <Compile Include="Common\IObserver.cs" />
     <Compile Include="Common\Notification.cs" />
@@ -67,7 +70,6 @@
     <Compile Include="DataImporters\MongoDbDataImporter.cs" />
     <Compile Include="DataLoaders\Contracts\IDataLoader.cs" />
     <Compile Include="DataLoaders\XmlDataLoader.cs" />
-    <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\ArtWorkInformation.cs" />
     <Compile Include="Models\ArtWorkInformationRoot.cs" />

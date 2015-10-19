@@ -3,6 +3,7 @@
     using CreateJsonReports;
     using GeneratePdfReports;
     using LoadExcelReportsImportDataMongoDbToMsSql;
+    using LoadXmlIntoMongoDbAndMsSql;
     using Setup;
 
     public class Startup
@@ -29,10 +30,16 @@
         /// </summary>
         public static void Main()
         {
+            // TODO: Task 1 - Excel to SQL Server importing
+            // TODO: Task 3 - All
+            // TODO: Task 5 - XML to SQL Server importing
+            // TODO: Task 6 - All
+
             SetupClient.Instance.Run();
             MsSqlExcelAndMongoDbDataImporter.Instance.Run();
             PdfReportsGenerator.Instance.Run();
             JsonReportsGenerator.Instance.Run();
+            MongoDbAndMsSqlXmlDataImporter.Instance.Run();
         }
     }
 }
