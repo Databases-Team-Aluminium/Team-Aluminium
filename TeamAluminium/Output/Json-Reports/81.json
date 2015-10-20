@@ -1,9 +1,7 @@
 {
-  "Id": 81,
-  "Title": "The Song of War",
-  "Type": 0,
-  "Status": 0,
-  "ArtistId": 82,
-  "Value": 4283555.00,
-  "DateSold": null
+  "art-work-id": 81,
+  "art-work-name": "Unfolding Extracts from Autumnal Echo",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

@@ -2,7 +2,7 @@
 {
     using System.Globalization;
     using System.Xml;
-    using ArtGallery.EntityFrameworkData;
+    using ArtGallery.SqlServerData;
     using System.Data.Entity.Infrastructure;
 
     public class XmlReportsGenerator
@@ -42,8 +42,8 @@
 
             string nativeSqlQuery =
                     "SELECT a.FirstName + ' ' + a.LastName AS [FullName], aw.DateSold, SUM(aw.Value) AS [Price]" +
-                    "FROM ArtWorkSqls aw " +
-                    "INNER JOIN ArtistSqls a on aw.ArtistId=a.Id AND aw.DateSold IS NOT NULL " +
+                    "FROM ArtWorks aw " +
+                    "INNER JOIN Artists a on aw.ArtistId=a.Id AND aw.DateSold IS NOT NULL " +
                     "GROUP BY a.FirstName, a.LastName, aw.DateSold";
 
             DbRawSqlQuery<ArtistSaleReport> artistSaleReports = db.Database.SqlQuery<ArtistSaleReport>(nativeSqlQuery);

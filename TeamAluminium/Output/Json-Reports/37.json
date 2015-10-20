@@ -1,9 +1,7 @@
 {
-  "Id": 37,
-  "Title": "The Sky of God",
-  "Type": 5,
-  "Status": 1,
-  "ArtistId": 32,
-  "Value": 4735432.00,
-  "DateSold": null
+  "art-work-id": 37,
+  "art-work-name": "Old Man Deceiving Humanism",
+  "art-work-type": "PastelPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 3947300.00
 }

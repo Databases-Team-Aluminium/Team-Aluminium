@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.EntityFrameworkData.Repositories
+﻿namespace ArtGallery.SqlServerData.Repositories
 {
     using System.Data.Entity;
     using System.Linq;

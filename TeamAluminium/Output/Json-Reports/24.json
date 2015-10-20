@@ -1,9 +1,7 @@
 {
-  "Id": 24,
-  "Title": "Aphrodite or Projection",
-  "Type": 7,
-  "Status": 0,
-  "ArtistId": 23,
-  "Value": 9477466.00,
-  "DateSold": null
+  "art-work-id": 24,
+  "art-work-name": "Tender Aviator of Sorrow",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

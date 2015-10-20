@@ -7,8 +7,8 @@
 
     using Common;
     using Contracts;
-    using Models.Common;
-    using Models.Exhibits;
+    using MongoDbModels.Common;
+    using MongoDbModels.Exhibits;
     using MongoDB.Driver;
     using Utils;
 

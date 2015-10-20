@@ -1,9 +1,7 @@
 {
-  "Id": 41,
-  "Title": "Knowledge or Poetry",
-  "Type": 1,
-  "Status": 1,
-  "ArtistId": 36,
-  "Value": 5503219.00,
-  "DateSold": null
+  "art-work-id": 41,
+  "art-work-name": "Emotional Idea",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

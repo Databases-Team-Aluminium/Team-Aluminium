@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="ArtGalleryMySqlDbContext.cs" />
     <Compile Include="ArtGalleryMySqlDbInitializer.cs" />
+    <Compile Include="MySqlConfiguration.cs" />
+    <Compile Include="MySqlHistoryContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,9 +67,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj">
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.SqlServerModels.csproj">
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
-      <Name>ArtGallery.EntityFrameworkModels</Name>
+      <Name>ArtGallery.SqlServerModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGallery.MySqlModel\ArtGallery.MySqlModel.csproj">
       <Project>{14992278-261a-4e29-82e5-b45f09006f8a}</Project>

@@ -1,9 +1,7 @@
 {
-  "Id": 14,
-  "Title": "Absentminded Orpheus of Despair",
-  "Type": 4,
-  "Status": 3,
-  "ArtistId": 14,
-  "Value": 8621010.00,
-  "DateSold": null
+  "art-work-id": 14,
+  "art-work-name": "The Cannibalism of Lust",
+  "art-work-type": "GlassSculpture",
+  "art-work-status": "Sold",
+  "art-work-income-value": 47621.00
 }

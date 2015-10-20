@@ -2,13 +2,13 @@
 {
     using System.Collections.Generic;
 
-    using ArtGallery.EntityFrameworkData;
+    using ArtGallery.SqlServerData;
     using Common;
     using Contracts;
     using DataLoaders.Contracts;
     using Omu.ValueInjecter;
     using System.Linq;
-    using ArtGallery.EntityFrameworkModels.Additional;
+    using ArtGallery.SqlServerModels.Additional;
 
     public class MsSqlDataImporter : IDataImporter
     {

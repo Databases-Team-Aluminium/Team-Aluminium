@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models.Exhibits
+﻿namespace ArtGallery.MongoDbModels.Exhibits
 {
     using System;
 

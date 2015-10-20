@@ -3,11 +3,11 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using ArtGallery.EntityFrameworkData;
+    using ArtGallery.SqlServerData;
     using ArtGallery.Setup.Common;
-    using ArtGallery.EntityFrameworkModels.Exhibits;
-    using ArtGallery.EntityFrameworkModels.People;
-    using ArtGallery.EntityFrameworkModels.Places;
+    using ArtGallery.SqlServerModels.Exhibits;
+    using ArtGallery.SqlServerModels.People;
+    using ArtGallery.SqlServerModels.Places;
     using Omu.ValueInjecter;
 
     public class MsSqlDbDataImporter : IObservable
@@ -69,13 +69,13 @@
             var artWorks = this.dataProvider.GetArtWorks();
             var countries = this.dataProvider.GetCountries();
 
-            var sqlCountries = countries.Select(x => (CountrySql)new CountrySql().InjectFrom(x)).ToList();
+            var sqlCountries = countries.Select(x => (Country)new Country().InjectFrom(x)).ToList();
 
-            var sqlArtWorks = artWorks.Select(x => (ArtWorkSql)new ArtWorkSql().InjectFrom(x)).ToList();
+            var sqlArtWorks = artWorks.Select(x => (ArtWork)new ArtWork().InjectFrom(x)).ToList();
 
             foreach (var artist in artists)
             {
-                var sqlArtist = new ArtistSql();
+                var sqlArtist = new Artist();
                 sqlArtist.InjectFrom(artist);
 
                 sqlArtist.ArtWorks = sqlArtWorks.Where(x => x.ArtistId == sqlArtist.Id).ToList();

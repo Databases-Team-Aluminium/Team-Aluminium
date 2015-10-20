@@ -1,9 +1,7 @@
 {
-  "Id": 70,
-  "Title": "Luminous Rhubarb of Peace",
-  "Type": 7,
-  "Status": 2,
-  "ArtistId": 67,
-  "Value": 7443711.00,
-  "DateSold": "2014-04-04T00:00:00"
+  "art-work-id": 70,
+  "art-work-name": "Nudist Detaching the Composition",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

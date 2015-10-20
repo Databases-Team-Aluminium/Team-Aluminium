@@ -1,9 +1,7 @@
 {
-  "Id": 100,
-  "Title": "Crying Virgin under Construction",
-  "Type": 8,
-  "Status": 0,
-  "ArtistId": 99,
-  "Value": 5204289.00,
-  "DateSold": null
+  "art-work-id": 100,
+  "art-work-name": "Act Including Interfering Lover",
+  "art-work-type": "OilPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

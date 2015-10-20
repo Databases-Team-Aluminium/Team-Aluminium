@@ -43,8 +43,8 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -57,8 +57,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\IObservable.cs" />
+    <Compile Include="Common\IObserver.cs" />
+    <Compile Include="Common\Notification.cs" />
+    <Compile Include="JsonManagers\Contracts\IManager.cs" />
+    <Compile Include="JsonManagers\JsonManager.cs" />
     <Compile Include="JsonReportsGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Writers\Contracts\IWriter.cs" />
+    <Compile Include="Writers\TextWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -69,21 +76,29 @@
       <Project>{4b8e3462-0458-4669-aa6b-3ca8edaf7a9f}</Project>
       <Name>01.LoadExcelReportsImportDataMongoDbToMsSql</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj">
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGallery.SqlServerData.csproj">
       <Project>{d460447d-9c1c-4ca7-86b8-911658aac30b}</Project>
-      <Name>ArtGallery.EntityFrameworkData</Name>
+      <Name>ArtGallery.SqlServerData</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj">
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.SqlServerModels.csproj">
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
-      <Name>ArtGallery.EntityFrameworkModels</Name>
+      <Name>ArtGallery.SqlServerModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.MongoDbModels.csproj">
+      <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
+      <Name>ArtGallery.MongoDbModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtGallery.MySqlData\ArtGallery.MySqlData.csproj">
+      <Project>{c4db4af0-65f9-497f-a8b4-bb823fd4a029}</Project>
+      <Name>ArtGallery.MySqlData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArtGallery.MySqlModel\ArtGallery.MySqlModel.csproj">
+      <Project>{14992278-261a-4e29-82e5-b45f09006f8a}</Project>
+      <Name>ArtGallery.MySqlModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
       <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
       <Name>ArtGallery.Setup</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
-      <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
-      <Name>ArtGallery.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

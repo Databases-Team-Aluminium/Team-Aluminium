@@ -1,9 +1,7 @@
 {
-  "Id": 46,
-  "Title": "Landscape with Fatal Future",
-  "Type": 9,
-  "Status": 2,
-  "ArtistId": 41,
-  "Value": 316777.00,
-  "DateSold": "2011-06-22T00:00:00"
+  "art-work-id": 46,
+  "art-work-name": "The Song of War",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

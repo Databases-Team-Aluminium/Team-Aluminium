@@ -1,9 +1,7 @@
 {
-  "Id": 54,
-  "Title": "Complicated Stick",
-  "Type": 1,
-  "Status": 0,
-  "ArtistId": 53,
-  "Value": 3510688.00,
-  "DateSold": null
+  "art-work-id": 54,
+  "art-work-name": "Metaphysical Sky",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

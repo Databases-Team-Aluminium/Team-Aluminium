@@ -1,4 +1,4 @@
-namespace ArtGallery.EntityFrameworkData.Migrations
+namespace ArtGallery.SqlServerData.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

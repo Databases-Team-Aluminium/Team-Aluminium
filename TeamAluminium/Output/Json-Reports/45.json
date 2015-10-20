@@ -1,9 +1,7 @@
 {
-  "Id": 45,
-  "Title": "Ode to Jumping Compound",
-  "Type": 1,
-  "Status": 3,
-  "ArtistId": 40,
-  "Value": 3595321.00,
-  "DateSold": null
+  "art-work-id": 45,
+  "art-work-name": "Absentminded Orpheus of Despair",
+  "art-work-type": "MetalSculpture",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

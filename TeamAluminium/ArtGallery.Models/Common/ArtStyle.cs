@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models.Common
+﻿namespace ArtGallery.MongoDbModels.Common
 {
     public enum ArtStyle
     {

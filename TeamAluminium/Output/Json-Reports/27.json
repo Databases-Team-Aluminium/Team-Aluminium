@@ -1,9 +1,7 @@
 {
-  "Id": 27,
-  "Title": "Metaphysical Sky",
-  "Type": 4,
-  "Status": 3,
-  "ArtistId": 25,
-  "Value": 7790451.00,
-  "DateSold": null
+  "art-work-id": 27,
+  "art-work-name": "The Cannibalism of Innocence",
+  "art-work-type": "SprayPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 5767534.00
 }

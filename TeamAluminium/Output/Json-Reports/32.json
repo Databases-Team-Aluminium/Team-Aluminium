@@ -1,9 +1,7 @@
 {
-  "Id": 32,
-  "Title": "Established Apparition of Demoralized Structure",
-  "Type": 1,
-  "Status": 3,
-  "ArtistId": 29,
-  "Value": 9268219.00,
-  "DateSold": null
+  "art-work-id": 32,
+  "art-work-name": "Perceptive Boundry of Innocence",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

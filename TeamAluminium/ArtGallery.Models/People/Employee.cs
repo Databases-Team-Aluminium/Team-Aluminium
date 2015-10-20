@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models.People
+﻿namespace ArtGallery.MongoDbModels.People
 {
     using Contracts;
 

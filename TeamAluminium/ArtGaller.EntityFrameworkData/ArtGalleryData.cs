@@ -1,14 +1,14 @@
-﻿namespace ArtGallery.EntityFrameworkData
+﻿namespace ArtGallery.SqlServerData
 {
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
 
-    using ArtGallery.EntityFrameworkData.Repositories;
-    using ArtGallery.EntityFrameworkModels.Exhibits;
-    using ArtGallery.EntityFrameworkModels.People;
-    using ArtGallery.EntityFrameworkModels.Places;
-    using ArtGallery.EntityFrameworkModels.SalesReport;
+    using ArtGallery.SqlServerData.Repositories;
+    using ArtGallery.SqlServerModels.Exhibits;
+    using ArtGallery.SqlServerModels.People;
+    using ArtGallery.SqlServerModels.Places;
+    using ArtGallery.SqlServerModels.SalesReport;
 
     public class ArtGalleryData : IArtGalleryData
     {
@@ -21,19 +21,19 @@
             this.repositories = new Dictionary<Type, object>();
         }
 
-        public IRepository<ArtistSql> Artists
+        public IRepository<Artist> Artists
         {
-            get { return this.GetRepository<ArtistSql>(); }
+            get { return this.GetRepository<Artist>(); }
         }
 
-        public IRepository<ArtWorkSql> ArtWorks
+        public IRepository<ArtWork> ArtWorks
         {
-            get { return this.GetRepository<ArtWorkSql>(); }
+            get { return this.GetRepository<ArtWork>(); }
         }
 
-        public IRepository<CountrySql> Country
+        public IRepository<Country> Country
         {
-            get { return this.GetRepository<CountrySql>(); }
+            get { return this.GetRepository<Country>(); }
         }
 
         public IRepository<YearSaleReport> YearSaleReport

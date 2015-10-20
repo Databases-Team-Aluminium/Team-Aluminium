@@ -89,9 +89,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
+    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.MongoDbModels.csproj">
       <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
-      <Name>ArtGallery.Models</Name>
+      <Name>ArtGallery.MongoDbModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

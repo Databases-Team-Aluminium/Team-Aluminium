@@ -1,9 +1,7 @@
 {
-  "Id": 56,
-  "Title": "My Departure of Fear",
-  "Type": 0,
-  "Status": 2,
-  "ArtistId": 55,
-  "Value": 8417111.00,
-  "DateSold": "2014-04-28T00:00:00"
+  "art-work-id": 56,
+  "art-work-name": "The Philosophy of Fear",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

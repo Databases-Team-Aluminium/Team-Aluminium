@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.EntityFrameworkModels.People
+﻿namespace ArtGallery.SqlServerModels.People
 {
     using System;
     using System.Collections.Generic;
@@ -8,13 +8,13 @@
     using Exhibits;
     using Places;
 
-    public class ArtistSql
+    public class Artist
     {
-        private ICollection<ArtWorkSql> artWorks;
+        private ICollection<ArtWork> artWorks;
 
-        public ArtistSql()
+        public Artist()
         {
-            this.artWorks = new HashSet<ArtWorkSql>();
+            this.artWorks = new HashSet<ArtWork>();
         }
 
         public int Id { get; set; }
@@ -33,9 +33,9 @@
 
         public int CountryId { get; set; }
 
-        public virtual CountrySql Country { get; set; }
+        public virtual Country Country { get; set; }
 
-        public virtual ICollection<ArtWorkSql> ArtWorks
+        public virtual ICollection<ArtWork> ArtWorks
         {
             get { return this.artWorks; }
 

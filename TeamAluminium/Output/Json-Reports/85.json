@@ -1,9 +1,7 @@
 {
-  "Id": 85,
-  "Title": "Analysis and Cannibalism",
-  "Type": 8,
-  "Status": 3,
-  "ArtistId": 85,
-  "Value": 4378261.00,
-  "DateSold": null
+  "art-work-id": 85,
+  "art-work-name": "Extracts from Painted Air",
+  "art-work-type": "MetalSculpture",
+  "art-work-status": "Sold",
+  "art-work-income-value": 1806609.00
 }

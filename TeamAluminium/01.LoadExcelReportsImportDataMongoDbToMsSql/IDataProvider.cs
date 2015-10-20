@@ -3,9 +3,9 @@
     using System;
     using System.Collections.Generic;
 
-    using ArtGallery.Models.Exhibits;
-    using ArtGallery.Models.People;
-    using ArtGallery.Models.Places;
+    using ArtGallery.MongoDbModels.Exhibits;
+    using ArtGallery.MongoDbModels.People;
+    using ArtGallery.MongoDbModels.Places;
 
     public interface IDataProvider
     {

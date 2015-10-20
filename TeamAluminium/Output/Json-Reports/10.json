@@ -1,9 +1,7 @@
 {
-  "Id": 10,
-  "Title": "The False Information",
-  "Type": 3,
-  "Status": 2,
-  "ArtistId": 12,
-  "Value": 1277096.00,
-  "DateSold": "2014-12-15T00:00:00"
+  "art-work-id": 10,
+  "art-work-name": "Resignation and Absence",
+  "art-work-type": "OilPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

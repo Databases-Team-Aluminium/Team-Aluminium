@@ -1,9 +1,7 @@
 {
-  "Id": 77,
-  "Title": "Fugue with Intuitive Cannibalism",
-  "Type": 5,
-  "Status": 1,
-  "ArtistId": 76,
-  "Value": 6604710.00,
-  "DateSold": null
+  "art-work-id": 77,
+  "art-work-name": "Thing and Design",
+  "art-work-type": "SprayPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

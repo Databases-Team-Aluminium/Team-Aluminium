@@ -1,9 +1,7 @@
 {
-  "Id": 94,
-  "Title": "Unfolding Extracts from Autumnal Echo",
-  "Type": 1,
-  "Status": 3,
-  "ArtistId": 97,
-  "Value": 9024591.00,
-  "DateSold": null
+  "art-work-id": 94,
+  "art-work-name": "My Visionary Idealism",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

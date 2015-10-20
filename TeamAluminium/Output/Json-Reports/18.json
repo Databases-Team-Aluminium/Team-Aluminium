@@ -1,9 +1,7 @@
 {
-  "Id": 18,
-  "Title": "Nun Detaching a Staircase",
-  "Type": 2,
-  "Status": 0,
-  "ArtistId": 20,
-  "Value": 9573797.00,
-  "DateSold": null
+  "art-work-id": 18,
+  "art-work-name": "The False Information",
+  "art-work-type": "MetalSculpture",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

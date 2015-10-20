@@ -1,9 +1,7 @@
 {
-  "Id": 95,
-  "Title": "Nothing of Fear - Composition VII",
-  "Type": 0,
-  "Status": 1,
-  "ArtistId": 98,
-  "Value": 9356182.00,
-  "DateSold": null
+  "art-work-id": 95,
+  "art-work-name": "Dialogue with Reflecting Summation",
+  "art-work-type": "OilPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

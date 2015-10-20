@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.EntityFrameworkModels.Additional
+﻿namespace ArtGallery.SqlServerModels.Additional
 {
     public class ArtWorkDescription
     {

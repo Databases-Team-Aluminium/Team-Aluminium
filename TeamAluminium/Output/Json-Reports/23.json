@@ -1,9 +1,7 @@
 {
-  "Id": 23,
-  "Title": "Nurse Desiring a Bureaucrat",
-  "Type": 8,
-  "Status": 2,
-  "ArtistId": 22,
-  "Value": 7933473.00,
-  "DateSold": "2012-09-13T00:00:00"
+  "art-work-id": 23,
+  "art-work-name": "The Sky of God",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

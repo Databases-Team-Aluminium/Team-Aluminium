@@ -1,16 +1,17 @@
-﻿namespace ArtGallery.EntityFrameworkModels.Places
+﻿namespace ArtGallery.SqlServerModels.Places
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using ArtGallery.EntityFrameworkModels.People;
 
-    public class CountrySql
+    using People;
+
+    public class Country
     {
-        private ICollection<ArtistSql> artist;
+        private ICollection<Artist> artist;
 
-        public CountrySql()
+        public Country()
         {
-            this.artist = new HashSet<ArtistSql>();
+            this.artist = new HashSet<Artist>();
         }
 
         public int Id { get; set; }
@@ -18,7 +19,7 @@
         [MaxLength(100)]
         public string Name { get; set; }
 
-        public virtual ICollection<ArtistSql> Artist
+        public virtual ICollection<Artist> Artist
         {
             get { return this.artist; }
 

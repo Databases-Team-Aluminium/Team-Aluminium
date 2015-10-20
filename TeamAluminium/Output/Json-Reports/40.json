@@ -1,9 +1,7 @@
 {
-  "Id": 40,
-  "Title": "The Ephemeral Spirit",
-  "Type": 4,
-  "Status": 0,
-  "ArtistId": 35,
-  "Value": 1911316.00,
-  "DateSold": null
+  "art-work-id": 40,
+  "art-work-name": "Virgin Descending the Left Corner",
+  "art-work-type": "PastelPainting",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

@@ -1,9 +1,7 @@
 {
-  "Id": 60,
-  "Title": "Emotional Idea",
-  "Type": 8,
-  "Status": 3,
-  "ArtistId": 59,
-  "Value": 5195263.00,
-  "DateSold": null
+  "art-work-id": 60,
+  "art-work-name": "Transformation vs Sister",
+  "art-work-type": "OilPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

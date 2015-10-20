@@ -1,9 +1,7 @@
 {
-  "Id": 58,
-  "Title": "Old Man Deceiving Humanism",
-  "Type": 9,
-  "Status": 3,
-  "ArtistId": 57,
-  "Value": 5463274.00,
-  "DateSold": null
+  "art-work-id": 58,
+  "art-work-name": "My Departure of Fear",
+  "art-work-type": "InkPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 4725693.00
 }

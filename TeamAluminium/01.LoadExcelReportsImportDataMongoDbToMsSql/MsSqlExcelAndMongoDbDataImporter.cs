@@ -2,7 +2,7 @@
 {
     using System;
 
-    using ArtGallery.EntityFrameworkData;
+    using ArtGallery.SqlServerData;
     using ArtGallery.Setup;
     using ArtGallery.Setup.Writers;
 

@@ -1,9 +1,7 @@
 {
-  "Id": 76,
-  "Title": "Journey vs Head",
-  "Type": 6,
-  "Status": 0,
-  "ArtistId": 76,
-  "Value": 5295687.00,
-  "DateSold": null
+  "art-work-id": 76,
+  "art-work-name": "Nothing of Fear - Composition VII",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

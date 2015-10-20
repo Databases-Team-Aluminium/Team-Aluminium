@@ -1,11 +1,9 @@
 ﻿namespace ArtGallery.SqlLiteData
 {
-    using System;
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
-    using System.Linq;
-
-    using ArtGallery.SqlLiteModels.SalesReport;
+   
+    using SqlLiteModels;
 
     public class ArtGallerySqlLiteDbContext : DbContext
     {
@@ -16,9 +14,7 @@
             Configuration.LazyLoadingEnabled = true;
         }
 
-        public virtual IDbSet<YearSaleReportSqlLite> YearSaleReport { get; set; }
-
-        public virtual IDbSet<SaleReportsqlLite> SaleReport { get; set; }
+        public virtual IDbSet<ArtWorkDetails> ArtWorksDetails { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

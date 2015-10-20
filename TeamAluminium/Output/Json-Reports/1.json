@@ -1,9 +1,7 @@
 {
-  "Id": 1,
-  "Title": "Seated Old Man (detail)",
-  "Type": 9,
-  "Status": 3,
-  "ArtistId": 3,
-  "Value": 8786715.00,
-  "DateSold": null
+  "art-work-id": 1,
+  "art-work-name": "Impression of Dying Image",
+  "art-work-type": "MetalSculpture",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

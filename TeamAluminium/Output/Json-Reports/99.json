@@ -1,9 +1,7 @@
 {
-  "Id": 99,
-  "Title": "Pataphysical Nothing",
-  "Type": 5,
-  "Status": 2,
-  "ArtistId": 99,
-  "Value": 6043357.00,
-  "DateSold": "2014-06-29T00:00:00"
+  "art-work-id": 99,
+  "art-work-name": "Fugue with Demoralized Expression",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models.Places
+﻿namespace ArtGallery.MongoDbModels.Places
 {
     public class Country
     {

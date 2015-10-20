@@ -1,9 +1,7 @@
 {
-  "Id": 88,
-  "Title": "Purpose with Sadness",
-  "Type": 7,
-  "Status": 2,
-  "ArtistId": 89,
-  "Value": 3574163.00,
-  "DateSold": "2012-03-27T00:00:00"
+  "art-work-id": 88,
+  "art-work-name": "Stenographic Substance - Oversize",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

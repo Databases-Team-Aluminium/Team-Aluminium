@@ -1,9 +1,7 @@
 {
-  "Id": 92,
-  "Title": "Virgin Descending the Left Corner",
-  "Type": 4,
-  "Status": 1,
-  "ArtistId": 94,
-  "Value": 7914318.00,
-  "DateSold": null
+  "art-work-id": 92,
+  "art-work-name": "Remixed Sister of Despair",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

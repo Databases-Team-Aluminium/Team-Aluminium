@@ -1,9 +1,7 @@
 {
-  "Id": 96,
-  "Title": "Peacock Deceiving the Canvas",
-  "Type": 3,
-  "Status": 0,
-  "ArtistId": 98,
-  "Value": 7201699.00,
-  "DateSold": null
+  "art-work-id": 96,
+  "art-work-name": "Objective Path of Pain",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 5479948.00
 }

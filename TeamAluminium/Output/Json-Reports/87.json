@@ -1,9 +1,7 @@
 {
-  "Id": 87,
-  "Title": "Perceptive Eye - Number 8",
-  "Type": 6,
-  "Status": 3,
-  "ArtistId": 89,
-  "Value": 2979086.00,
-  "DateSold": null
+  "art-work-id": 87,
+  "art-work-name": "Masked Giraffe - Oversize",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

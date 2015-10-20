@@ -1,9 +1,7 @@
 {
-  "Id": 98,
-  "Title": "Abstraction with Hope",
-  "Type": 5,
-  "Status": 1,
-  "ArtistId": 99,
-  "Value": 3256666.00,
-  "DateSold": null
+  "art-work-id": 98,
+  "art-work-name": "Seated Old Man (detail)",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

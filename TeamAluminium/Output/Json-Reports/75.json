@@ -1,9 +1,7 @@
 {
-  "Id": 75,
-  "Title": "The Absence of Lust",
-  "Type": 7,
-  "Status": 3,
-  "ArtistId": 75,
-  "Value": 4123566.00,
-  "DateSold": null
+  "art-work-id": 75,
+  "art-work-name": "Surface with Venus",
+  "art-work-type": "OilPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 5018486.00
 }

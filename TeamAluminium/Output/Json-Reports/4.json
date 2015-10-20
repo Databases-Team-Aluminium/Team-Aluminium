@@ -1,9 +1,7 @@
 {
-  "Id": 4,
-  "Title": "Perceptive Boundry of Innocence",
-  "Type": 6,
-  "Status": 2,
-  "ArtistId": 6,
-  "Value": 9653703.00,
-  "DateSold": "2014-10-23T00:00:00"
+  "art-work-id": 4,
+  "art-work-name": "Nurse Desiring a Bureaucrat",
+  "art-work-type": "AcrylicPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 9302597.00
 }

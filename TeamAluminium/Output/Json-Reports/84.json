@@ -1,9 +1,7 @@
 {
-  "Id": 84,
-  "Title": "The Interior of Innocence",
-  "Type": 6,
-  "Status": 3,
-  "ArtistId": 84,
-  "Value": 5319967.00,
-  "DateSold": null
+  "art-work-id": 84,
+  "art-work-name": "Silent Nurse (detail)",
+  "art-work-type": "GlassSculpture",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

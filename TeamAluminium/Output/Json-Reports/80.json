@@ -1,9 +1,7 @@
 {
-  "Id": 80,
-  "Title": "The Pataphysical Material",
-  "Type": 3,
-  "Status": 0,
-  "ArtistId": 82,
-  "Value": 8013833.00,
-  "DateSold": null
+  "art-work-id": 80,
+  "art-work-name": "Knowledge or Poetry",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

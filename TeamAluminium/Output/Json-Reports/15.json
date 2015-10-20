@@ -1,9 +1,7 @@
 {
-  "Id": 15,
-  "Title": "Tremulous Memories of High Expression",
-  "Type": 3,
-  "Status": 2,
-  "ArtistId": 15,
-  "Value": 1581336.00,
-  "DateSold": "2012-04-14T00:00:00"
+  "art-work-id": 15,
+  "art-work-name": "Landscape with Fatal Future",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

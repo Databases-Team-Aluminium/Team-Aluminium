@@ -1,9 +1,7 @@
 {
-  "Id": 12,
-  "Title": "Religious Approach",
-  "Type": 0,
-  "Status": 0,
-  "ArtistId": 13,
-  "Value": 4653412.00,
-  "DateSold": null
+  "art-work-id": 12,
+  "art-work-name": "Supposed Conflict of God",
+  "art-work-type": "OilPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 1796858.00
 }

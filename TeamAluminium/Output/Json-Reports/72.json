@@ -1,9 +1,7 @@
 {
-  "Id": 72,
-  "Title": "Geometric Dialogue with Momentary Echo",
-  "Type": 2,
-  "Status": 0,
-  "ArtistId": 72,
-  "Value": 7679237.00,
-  "DateSold": null
+  "art-work-id": 72,
+  "art-work-name": "The Luminous Movement",
+  "art-work-type": "GlassSculpture",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

@@ -95,30 +95,27 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Data\SalesReports.zip" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGallery.EntityFrameworkData.csproj">
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkData\ArtGallery.SqlServerData.csproj">
       <Project>{d460447d-9c1c-4ca7-86b8-911658aac30b}</Project>
-      <Name>ArtGallery.EntityFrameworkData</Name>
+      <Name>ArtGallery.SqlServerData</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.EntityFrameworkModels.csproj">
+    <ProjectReference Include="..\ArtGaller.EntityFrameworkModels\ArtGallery.SqlServerModels.csproj">
       <Project>{21cc2d09-833c-46b9-9e34-546c69384c5c}</Project>
-      <Name>ArtGallery.EntityFrameworkModels</Name>
+      <Name>ArtGallery.SqlServerModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArtGallery.Setup\ArtGallery.Setup.csproj">
       <Project>{a4644c44-10ec-46d7-8374-a8f496309671}</Project>
       <Name>ArtGallery.Setup</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.Models.csproj">
+    <ProjectReference Include="..\ArtGallery.Models\ArtGallery.MongoDbModels.csproj">
       <Project>{5a7ed859-c6a9-4e9e-babd-14763bb53f24}</Project>
-      <Name>ArtGallery.Models</Name>
+      <Name>ArtGallery.MongoDbModels</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\SalesReports\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

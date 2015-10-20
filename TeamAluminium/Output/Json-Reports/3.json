@@ -1,9 +1,7 @@
 {
-  "Id": 3,
-  "Title": "Thing and Design",
-  "Type": 6,
-  "Status": 0,
-  "ArtistId": 5,
-  "Value": 657565.00,
-  "DateSold": null
+  "art-work-id": 3,
+  "art-work-name": "Element of Dreams 1955",
+  "art-work-type": "AcrylicPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

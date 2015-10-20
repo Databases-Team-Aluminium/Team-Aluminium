@@ -1,17 +1,21 @@
 ﻿namespace CreateJsonReports
 {
-    using System;
     using System.IO;
     using System.Linq;
 
-    using ArtGallery.EntityFrameworkData;
-    using ArtGallery.Models.Exhibits;
+    using ArtGallery.SqlServerData;
     using Newtonsoft.Json;
+    using ArtGallery.Setup.Common;
+    using System.Collections.Generic;
+    using ArtGallery.MySqlData;
+    using ArtGallery.MySqlModel.Reports;
+    using Writers;
+    using System;
+    using ArtGallery.Setup.Writers.Contracts;
+    using JsonManagers;
 
     public class JsonReportsGenerator
     {
-        private const string PathToJsonReports = "../../../Output/Json-Reports";
-
         private static JsonReportsGenerator instance;
 
         public static JsonReportsGenerator Instance
@@ -33,39 +37,12 @@
 
         public void Run()
         {
-            // To be refactored. Not really HQC
-            Console.WriteLine("Generating JSON reports...");
-            var ctx = new ArtGalleryDbContext();
-            this.GetArtWorkReport(ctx);
-            Console.WriteLine("Done.");
-        }
+            var writer = new Writers.TextWriter(Console.Out);
+            var manager = new JsonManager();
+            manager.Subscribe(writer);
 
-        private void GetArtWorkReport(ArtGalleryDbContext ctx)
-        {
-            using (ctx)
-            {
-               var artWorkReports = ctx.ArtWorks.Select(a => new ArtWork()
-                {
-                    Id = a.Id,
-                    Title = a.Title,
-                    Type = a.Type,
-                    Status = a.Status,
-                    ArtistId = a.ArtistId,
-                    Value = a.Value,
-                    DateSold = a.DateSold
-                }).ToList();
-
-                foreach (var report in artWorkReports)
-                {
-                    this.SaveReport(report, report.Id);
-                }
-            }
-        }
-
-        private void SaveReport(ArtWork report, int id)
-        {
-            string jsonReport = JsonConvert.SerializeObject(report, Formatting.Indented);
-            File.WriteAllText(PathToJsonReports + "/" + id + ".json", jsonReport.ToString());
+            manager.WriteData();
         }
     }
 }
+

@@ -1,9 +1,7 @@
 {
-  "Id": 62,
-  "Title": "Fragment of Autumnal Projection",
-  "Type": 7,
-  "Status": 0,
-  "ArtistId": 61,
-  "Value": 2121558.00,
-  "DateSold": null
+  "art-work-id": 62,
+  "art-work-name": "Three-Way Structure",
+  "art-work-type": "InkPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 3735228.00
 }

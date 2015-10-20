@@ -1,14 +1,14 @@
-﻿namespace ArtGallery.EntityFrameworkModels.Exhibits
+﻿namespace ArtGallery.SqlServerModels.Exhibits
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    using ArtGallery.EntityFrameworkModels.People;
-    using ArtGallery.Models.Common;
+    using ArtGallery.SqlServerModels.People;
+    using ArtGallery.MongoDbModels.Common;
     using Additional;
 
-    public class ArtWorkSql
+    public class ArtWork
     {
         public int Id { get; set; }
 
@@ -21,7 +21,7 @@
 
         public int ArtistId { get; set; }
 
-        public virtual ArtistSql Artist { get; set; }
+        public virtual Artist Artist { get; set; }
 
         public decimal Value { get; set; }
 

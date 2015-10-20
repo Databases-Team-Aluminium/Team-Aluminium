@@ -1,9 +1,7 @@
 {
-  "Id": 42,
-  "Title": "Nudist Desiring Humanism",
-  "Type": 4,
-  "Status": 2,
-  "ArtistId": 38,
-  "Value": 2073100.00,
-  "DateSold": "2014-10-11T00:00:00"
+  "art-work-id": 42,
+  "art-work-name": "Broken Component",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

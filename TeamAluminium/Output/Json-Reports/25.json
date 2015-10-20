@@ -1,9 +1,7 @@
 {
-  "Id": 25,
-  "Title": "Supposed Conflict of God",
-  "Type": 5,
-  "Status": 3,
-  "ArtistId": 24,
-  "Value": 6456301.00,
-  "DateSold": null
+  "art-work-id": 25,
+  "art-work-name": "Tremulous Memories of High Expression",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

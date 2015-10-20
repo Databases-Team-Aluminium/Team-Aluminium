@@ -1,9 +1,7 @@
 {
-  "Id": 2,
-  "Title": "Tender Aviator of Sorrow",
-  "Type": 9,
-  "Status": 2,
-  "ArtistId": 5,
-  "Value": 794116.00,
-  "DateSold": "2012-07-17T00:00:00"
+  "art-work-id": 2,
+  "art-work-name": "Work & Edge",
+  "art-work-type": "InkPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 3791090.00
 }

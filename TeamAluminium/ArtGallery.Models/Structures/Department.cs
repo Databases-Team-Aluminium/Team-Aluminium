@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models.Structures
+﻿namespace ArtGallery.MongoDbModels.Structures
 {
     public class Department
     {

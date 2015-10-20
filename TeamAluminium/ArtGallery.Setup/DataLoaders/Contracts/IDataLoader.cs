@@ -2,10 +2,10 @@
 {
     using System.Collections.Generic;
 
-    using Models.Exhibits;
-    using Models.People;
-    using Models.Places;
-    using Models.Structures;
+    using MongoDbModels.Exhibits;
+    using MongoDbModels.People;
+    using MongoDbModels.Places;
+    using MongoDbModels.Structures;
 
     public interface IDataLoader
     {

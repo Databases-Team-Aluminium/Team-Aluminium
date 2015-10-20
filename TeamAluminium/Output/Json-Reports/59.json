@@ -1,9 +1,7 @@
 {
-  "Id": 59,
-  "Title": "Transformation vs Sister",
-  "Type": 3,
-  "Status": 3,
-  "ArtistId": 58,
-  "Value": 8097900.00,
-  "DateSold": null
+  "art-work-id": 59,
+  "art-work-name": "Virgin Deserting the Canvas",
+  "art-work-type": "StoneSculpture",
+  "art-work-status": "Sold",
+  "art-work-income-value": 5870406.00
 }

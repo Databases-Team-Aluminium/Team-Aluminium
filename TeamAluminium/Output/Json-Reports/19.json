@@ -1,9 +1,7 @@
 {
-  "Id": 19,
-  "Title": "Information or Context",
-  "Type": 0,
-  "Status": 3,
-  "ArtistId": 21,
-  "Value": 7682219.00,
-  "DateSold": null
+  "art-work-id": 19,
+  "art-work-name": "The Meditative Journey",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 9090932.00
 }

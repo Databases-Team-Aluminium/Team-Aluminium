@@ -1,9 +1,7 @@
 {
-  "Id": 49,
-  "Title": "Remixed Sister of Despair",
-  "Type": 9,
-  "Status": 3,
-  "ArtistId": 47,
-  "Value": 3372319.00,
-  "DateSold": null
+  "art-work-id": 49,
+  "art-work-name": "Nun Detaching a Staircase",
+  "art-work-type": "GlassSculpture",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

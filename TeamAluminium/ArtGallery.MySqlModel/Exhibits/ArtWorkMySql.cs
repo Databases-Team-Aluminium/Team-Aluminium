@@ -3,7 +3,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    using ArtGallery.Models.Common;
+    using ArtGallery.MongoDbModels.Common;
     using ArtGallery.MySqlModel.People;
 
     public class ArtWorkMySql

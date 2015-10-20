@@ -1,18 +1,18 @@
-﻿namespace ArtGallery.EntityFrameworkData
+﻿namespace ArtGallery.SqlServerData
 {
-    using ArtGallery.EntityFrameworkData.Repositories;
-    using ArtGallery.EntityFrameworkModels.Exhibits;
-    using ArtGallery.EntityFrameworkModels.People;
-    using ArtGallery.EntityFrameworkModels.Places;
-    using ArtGallery.EntityFrameworkModels.SalesReport;
+    using ArtGallery.SqlServerData.Repositories;
+    using ArtGallery.SqlServerModels.Exhibits;
+    using ArtGallery.SqlServerModels.People;
+    using ArtGallery.SqlServerModels.Places;
+    using ArtGallery.SqlServerModels.SalesReport;
 
     public interface IArtGalleryData
     {
-        IRepository<ArtistSql> Artists { get; }
+        IRepository<Artist> Artists { get; }
 
-        IRepository<ArtWorkSql> ArtWorks { get; }
+        IRepository<ArtWork> ArtWorks { get; }
 
-        IRepository<CountrySql> Country { get; }
+        IRepository<Country> Country { get; }
 
         IRepository<YearSaleReport> YearSaleReport { get; }
 

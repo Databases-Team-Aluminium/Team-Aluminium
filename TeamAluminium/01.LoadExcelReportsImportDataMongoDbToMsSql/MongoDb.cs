@@ -3,9 +3,9 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using ArtGallery.Models.Exhibits;
-    using ArtGallery.Models.People;
-    using ArtGallery.Models.Places;
+    using ArtGallery.MongoDbModels.Exhibits;
+    using ArtGallery.MongoDbModels.People;
+    using ArtGallery.MongoDbModels.Places;
     using MongoDB.Driver;
    
     public class MongoDb : IDataProvider

@@ -1,9 +1,7 @@
 {
-  "Id": 26,
-  "Title": "The Cannibalism of Death",
-  "Type": 1,
-  "Status": 3,
-  "ArtistId": 24,
-  "Value": 2845330.00,
-  "DateSold": null
+  "art-work-id": 26,
+  "art-work-name": "Ode to Jumping Compound",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

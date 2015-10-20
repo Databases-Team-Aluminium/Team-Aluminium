@@ -1,13 +1,13 @@
-﻿namespace ArtGallery.EntityFrameworkData
+﻿namespace ArtGallery.SqlServerData
 {
     using System.Data.Entity;
 
     using Migrations;
-    using EntityFrameworkModels.Exhibits;
-    using EntityFrameworkModels.People;
-    using EntityFrameworkModels.Places;
-    using EntityFrameworkModels.SalesReport;
-    using EntityFrameworkModels.Additional;
+    using SqlServerModels.Exhibits;
+    using SqlServerModels.People;
+    using SqlServerModels.Places;
+    using SqlServerModels.SalesReport;
+    using SqlServerModels.Additional;
 
     public class ArtGalleryDbContext : DbContext
     {
@@ -18,15 +18,15 @@
             // Database.SetInitializer(new DropCreateDatabaseAlways<ArtGalleryDbContext>());
         }
 
-        public virtual IDbSet<ArtistSql> Artists { get; set; }
+        public virtual IDbSet<Artist> Artists { get; set; }
 
-        public virtual IDbSet<ArtWorkSql> ArtWorks { get; set; }
+        public virtual IDbSet<ArtWork> ArtWorks { get; set; }
 
-        public virtual IDbSet<CountrySql> Country { get; set; }
+        public virtual IDbSet<Country> Countries { get; set; }
 
-        public virtual IDbSet<YearSaleReport> YearSaleReport { get; set; }
+        public virtual IDbSet<YearSaleReport> YearSalesReports { get; set; }
 
-        public virtual IDbSet<SalesReport> SalesReport { get; set; }
+        public virtual IDbSet<SalesReport> SalesReports { get; set; }
 
         public virtual IDbSet<ArtWorkDescription> ArtWorksDescriptions { get; set; }
     }

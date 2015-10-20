@@ -1,9 +1,7 @@
 {
-  "Id": 97,
-  "Title": "Context and Muse",
-  "Type": 1,
-  "Status": 1,
-  "ArtistId": 99,
-  "Value": 4899731.00,
-  "DateSold": null
+  "art-work-id": 97,
+  "art-work-name": "Torqued Movement of Desire",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "Sold",
+  "art-work-income-value": 6352263.00
 }

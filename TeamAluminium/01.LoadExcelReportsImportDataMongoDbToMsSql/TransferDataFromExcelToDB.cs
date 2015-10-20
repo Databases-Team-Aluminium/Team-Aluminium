@@ -5,9 +5,10 @@
     using System.Data;
     using System.Data.OleDb;
     using System.IO;
+    using System.Linq;
 
-    using ArtGallery.EntityFrameworkData;
-    using ArtGallery.EntityFrameworkModels.SalesReport;
+    using ArtGallery.SqlServerData;
+    using ArtGallery.SqlServerModels.SalesReport;
 
     public class TransferDataFromExcelToDB
     {
@@ -49,7 +50,7 @@
                         var filePath = dirPath + file.Name;
                         yearSaleReport.SaleReports = this.GetSaleReports(filePath);
 
-                        this.data.YearSaleReport.Add(yearSaleReport);
+                        this.data.YearSalesReports.Add(yearSaleReport);
                         this.data.SaveChanges();
                     }
 
@@ -84,7 +85,7 @@
                 }
             }
 
-            return saleRepots;
+            return saleRepots.Distinct().ToList();
         }
 
         private DateTime ParceDate(string date)

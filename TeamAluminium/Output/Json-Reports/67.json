@@ -1,9 +1,7 @@
 {
-  "Id": 67,
-  "Title": "The Philosophy of Fear",
-  "Type": 1,
-  "Status": 2,
-  "ArtistId": 64,
-  "Value": 8347869.00,
-  "DateSold": "2013-11-04T00:00:00"
+  "art-work-id": 67,
+  "art-work-name": "Nude Decreasing the Orange Field ",
+  "art-work-type": "InkPainting",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

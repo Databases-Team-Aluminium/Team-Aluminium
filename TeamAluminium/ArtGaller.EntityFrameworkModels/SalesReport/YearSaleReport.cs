@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.EntityFrameworkModels.SalesReport
+﻿namespace ArtGallery.SqlServerModels.SalesReport
 {
     using System;
     using System.Collections.Generic;

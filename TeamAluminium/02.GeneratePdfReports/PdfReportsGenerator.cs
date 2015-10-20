@@ -5,7 +5,7 @@
     using System.IO;
     using System.Linq;
 
-    using ArtGallery.EntityFrameworkData;
+    using ArtGallery.SqlServerData;
     using iTextSharp.text;
     using iTextSharp.text.pdf;
 

@@ -1,9 +1,7 @@
 {
-  "Id": 43,
-  "Title": "The Cannibalism of Innocence",
-  "Type": 7,
-  "Status": 2,
-  "ArtistId": 39,
-  "Value": 7103611.00,
-  "DateSold": "2011-01-14T00:00:00"
+  "art-work-id": 43,
+  "art-work-name": "Aphrodite or Projection",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

@@ -1,9 +1,7 @@
 {
-  "Id": 52,
-  "Title": "Idea of Dreams",
-  "Type": 0,
-  "Status": 2,
-  "ArtistId": 48,
-  "Value": 7734638.00,
-  "DateSold": "2010-11-02T00:00:00"
+  "art-work-id": 52,
+  "art-work-name": "The Mystic Cannibalism",
+  "art-work-type": "SprayPainting",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

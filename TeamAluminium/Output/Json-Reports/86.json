@@ -1,9 +1,7 @@
 {
-  "Id": 86,
-  "Title": "Linear Singularity in 3 Stages",
-  "Type": 1,
-  "Status": 0,
-  "ArtistId": 88,
-  "Value": 1844388.00,
-  "DateSold": null
+  "art-work-id": 86,
+  "art-work-name": "Stain and Work",
+  "art-work-type": "PastelPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

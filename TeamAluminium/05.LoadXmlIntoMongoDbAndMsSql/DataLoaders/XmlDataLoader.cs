@@ -7,8 +7,8 @@
     using System.Xml.Serialization;
 
     using Contracts;
-    using ArtGallery.Models.XmlModels;
-    using ArtGallery.Models.People;
+    using ArtGallery.MongoDbModels.XmlModels;
+    using ArtGallery.MongoDbModels.People;
     using Models;
 
     public class XmlDataLoader : IDataLoader

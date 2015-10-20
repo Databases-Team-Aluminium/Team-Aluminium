@@ -1,9 +1,7 @@
 {
-  "Id": 71,
-  "Title": "The Meditative Journey",
-  "Type": 8,
-  "Status": 0,
-  "ArtistId": 67,
-  "Value": 8035735.00,
-  "DateSold": null
+  "art-work-id": 71,
+  "art-work-name": "Dialogue with Trapped Shape",
+  "art-work-type": "OilPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 9720622.00
 }

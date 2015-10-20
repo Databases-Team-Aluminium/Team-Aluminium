@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.Models.XmlModels
+﻿namespace ArtGallery.MongoDbModels.XmlModels
 {
     using System.Xml.Serialization;
 

@@ -6,11 +6,11 @@
     using System.Linq;
 
     using Contracts;
-    using Models.Common;
-    using Models.Exhibits;
-    using Models.People;
-    using Models.Places;
-    using Models.Structures;
+    using MongoDbModels.Common;
+    using MongoDbModels.Exhibits;
+    using MongoDbModels.People;
+    using MongoDbModels.Places;
+    using MongoDbModels.Structures;
     using Utils;
 
 

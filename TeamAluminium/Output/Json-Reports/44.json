@@ -1,9 +1,7 @@
 {
-  "Id": 44,
-  "Title": "Intuitive Brushstroke of Lust",
-  "Type": 5,
-  "Status": 3,
-  "ArtistId": 39,
-  "Value": 6472009.00,
-  "DateSold": null
+  "art-work-id": 44,
+  "art-work-name": "The Absence of Lust",
+  "art-work-type": "AcrylicPainting",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

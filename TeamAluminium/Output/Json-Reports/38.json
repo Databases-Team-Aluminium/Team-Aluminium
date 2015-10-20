@@ -1,9 +1,7 @@
 {
-  "Id": 38,
-  "Title": "Dialogue with Reflecting Summation",
-  "Type": 5,
-  "Status": 1,
-  "ArtistId": 33,
-  "Value": 6125287.00,
-  "DateSold": null
+  "art-work-id": 38,
+  "art-work-name": "Complicated Stick",
+  "art-work-type": "OilPainting",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

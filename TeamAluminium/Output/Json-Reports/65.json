@@ -1,9 +1,7 @@
 {
-  "Id": 65,
-  "Title": "The Cannibalism of Lust",
-  "Type": 0,
-  "Status": 3,
-  "ArtistId": 62,
-  "Value": 9514741.00,
-  "DateSold": null
+  "art-work-id": 65,
+  "art-work-name": "Dialogue with Reincarnated Disgust",
+  "art-work-type": "PastelPainting",
+  "art-work-status": "Private",
+  "art-work-income-value": 0.00
 }

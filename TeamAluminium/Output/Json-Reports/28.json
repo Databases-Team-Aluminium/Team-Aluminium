@@ -1,9 +1,7 @@
 {
-  "Id": 28,
-  "Title": "The Mystic Cannibalism",
-  "Type": 8,
-  "Status": 3,
-  "ArtistId": 26,
-  "Value": 1292187.00,
-  "DateSold": null
+  "art-work-id": 28,
+  "art-work-name": "Old Man Deserting Nature",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

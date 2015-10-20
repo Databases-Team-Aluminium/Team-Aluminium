@@ -1,9 +1,7 @@
 {
-  "Id": 50,
-  "Title": "Manifesto of Silent Apropos",
-  "Type": 1,
-  "Status": 3,
-  "ArtistId": 47,
-  "Value": 6677202.00,
-  "DateSold": null
+  "art-work-id": 50,
+  "art-work-name": "Manifesto of Silent Apropos",
+  "art-work-type": "WaxStatue",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

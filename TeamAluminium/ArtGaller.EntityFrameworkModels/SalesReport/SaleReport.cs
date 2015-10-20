@@ -1,4 +1,4 @@
-﻿namespace ArtGallery.EntityFrameworkModels.SalesReport
+﻿namespace ArtGallery.SqlServerModels.SalesReport
 {
     public class SalesReport
     {

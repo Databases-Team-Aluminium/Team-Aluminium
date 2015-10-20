@@ -1,9 +1,7 @@
 {
-  "Id": 8,
-  "Title": "Perky Boy in Oil",
-  "Type": 9,
-  "Status": 0,
-  "ArtistId": 7,
-  "Value": 4133019.00,
-  "DateSold": null
+  "art-work-id": 8,
+  "art-work-name": "Drunk Bachelor - Composition VII",
+  "art-work-type": "OilPainting",
+  "art-work-status": "ForSale",
+  "art-work-income-value": 0.00
 }

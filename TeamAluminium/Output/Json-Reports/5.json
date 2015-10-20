@@ -1,9 +1,7 @@
 {
-  "Id": 5,
-  "Title": "Masked Giraffe - Oversize",
-  "Type": 1,
-  "Status": 3,
-  "ArtistId": 7,
-  "Value": 6183325.00,
-  "DateSold": null
+  "art-work-id": 5,
+  "art-work-name": "Reflecting Absence",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

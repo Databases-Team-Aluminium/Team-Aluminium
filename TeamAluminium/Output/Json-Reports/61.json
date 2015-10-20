@@ -1,9 +1,7 @@
 {
-  "Id": 61,
-  "Title": "Surface with Venus",
-  "Type": 2,
-  "Status": 1,
-  "ArtistId": 60,
-  "Value": 4559379.00,
-  "DateSold": null
+  "art-work-id": 61,
+  "art-work-name": "Perky Boy in Oil",
+  "art-work-type": "PastelPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 5992383.00
 }

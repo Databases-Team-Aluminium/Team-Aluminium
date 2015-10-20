@@ -3,10 +3,12 @@
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
 
-    using ArtGallery.MySqlModel.Exhibits;
-    using ArtGallery.MySqlModel.People;
-    using ArtGallery.MySqlModel.Places;
-   
+    using MySqlModel.Exhibits;
+    using MySqlModel.People;
+    using MySqlModel.Places;
+    using MySqlModel.Reports;
+
+    [DbConfigurationType(typeof(MySqlConfiguration))]
     public class ArtGalleryMySqlDbContext : DbContext
     {
         public ArtGalleryMySqlDbContext()
@@ -20,6 +22,8 @@
         public virtual IDbSet<ArtWorkMySql> ArtWorks { get; set; }
 
         public virtual IDbSet<CountryMySql> Country { get; set; }
+
+        public virtual IDbSet<ArtWorkJsonReport> Reports { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

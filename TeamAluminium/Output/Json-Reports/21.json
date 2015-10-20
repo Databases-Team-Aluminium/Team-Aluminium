@@ -1,9 +1,7 @@
 {
-  "Id": 21,
-  "Title": "Image and Painting",
-  "Type": 4,
-  "Status": 2,
-  "ArtistId": 21,
-  "Value": 3862159.00,
-  "DateSold": "2010-01-20T00:00:00"
+  "art-work-id": 21,
+  "art-work-name": "The Pure Spirit",
+  "art-work-type": "SprayPainting",
+  "art-work-status": "ForExhibition",
+  "art-work-income-value": 0.00
 }

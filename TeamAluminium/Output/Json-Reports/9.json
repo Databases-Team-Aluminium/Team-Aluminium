@@ -1,9 +1,7 @@
 {
-  "Id": 9,
-  "Title": "Reclining Peasant Rearranged",
-  "Type": 3,
-  "Status": 3,
-  "ArtistId": 11,
-  "Value": 1387347.00,
-  "DateSold": null
+  "art-work-id": 9,
+  "art-work-name": "Established Apparition of Demoralized Structure",
+  "art-work-type": "OilPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 1975035.00
 }

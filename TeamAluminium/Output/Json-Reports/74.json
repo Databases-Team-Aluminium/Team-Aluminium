@@ -1,9 +1,7 @@
 {
-  "Id": 74,
-  "Title": "Dialogue with Trapped Shape",
-  "Type": 8,
-  "Status": 0,
-  "ArtistId": 72,
-  "Value": 4681319.00,
-  "DateSold": null
+  "art-work-id": 74,
+  "art-work-name": "Purpose with Sadness",
+  "art-work-type": "FrescoPainting",
+  "art-work-status": "Sold",
+  "art-work-income-value": 2577405.00
 }
