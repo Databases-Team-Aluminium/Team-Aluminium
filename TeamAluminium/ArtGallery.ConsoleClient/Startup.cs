@@ -1,13 +1,14 @@
 ﻿namespace ArtGallery.ConsoleClient
 {
     using System.IO;
+
     using CreateJsonReports;
     using GenerateExcelReportFromMySqlAndSqLite;
     using GeneratePdfReports;
+    using GenerateXmlReport;
     using LoadExcelReportsImportDataMongoDbToMsSql;
     using LoadXmlIntoMongoDbAndMsSql;
     using Setup;
-    using GenerateXmlReport;
 
     public class Startup
     {
